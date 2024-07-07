@@ -1,0 +1,3340 @@
+
+    <!DOCTYPE html>
+<html lang="en-IN">
+	<head>		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="pingback" href="https://www.augustman.com/in/xmlrpc.php" />
+
+		<!-- PRECONNECT -->		
+		<link href="https://www.googletagservices.com" rel="preconnect" />
+		<link href="https://www.googletagservices.com" rel="dns-prefetch" />
+
+		<link href="https://securepubads.g.doubleclick.net" rel="preconnect" />
+		<link href="https://securepubads.g.doubleclick.net" rel="dns-prefetch" />
+
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+		<link href="https://fonts.gstatic.com" rel="dns-prefetch" crossorigin /> 
+
+		<link href="https://images.augustman.com" rel="preconnect" />
+		<link href="https://images.augustman.com" rel="dns-prefetch" /> 
+			
+
+		<!-- PRELOAD -->
+		<link
+			rel="preload"
+			href="https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2"
+			as="font"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2"
+			as="font"
+			crossorigin
+		/>
+
+		<!-- PLACEHOLDER IMAGE PRELOAD -->
+		<link
+			rel="preload"
+			as="image"
+			href="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60"
+			imagesizes="100vw"
+			fetchPriority="high"
+		/>
+
+		<style>
+			@font-face {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 400;
+				font-display: swap;
+				src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format("woff2");
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+					U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+			@font-face {
+				font-family: "Poppins";
+				font-style: normal;
+				font-weight: 700;
+				font-display: swap;
+				src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format("woff2");
+				unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+					U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			}
+
+    .inline-mini-product-box img{
+				height: 335px !important;
+				object-position: top center !important;
+			}
+			@media (max-width: 992px){
+				.inline-mini-product-box img {
+					height: 400px !important;
+					object-position: top center !important;
+				}
+			}
+			.inline-min-shop-slider .shop-link{
+				text-decoration: none !important;
+			}
+			.post-content .paragraph:not(.answer) div div{
+				margin: 0rem auto 0rem auto;
+			}
+			/* .btt_slider-wrapper{
+				margin-bottom: 1rem !important;
+			} */
+			.inline-mini-product-details-box{
+				margin-bottom: 1rem !important;
+				padding: 1.1rem 0.6rem;
+				min-height: 100px;
+			}
+		
+			.btt_inline-min-shop-wrapper .inline-min-shop-slider .product-card-details-wrapper .name{
+					margin: 8px 0px;
+				}
+				.slick-slider.inline-min-shop-slider>.slick-arrow.slick-prev {
+					left: 0;
+					background-image: url('/wp-content/themes/augustman-2021/images/am-icon-arrow-left.svg') !important;
+				}
+				.slick-slider.inline-min-shop-slider>.slick-arrow.slick-next {
+					right: 0;
+					background-image: url('/wp-content/themes/augustman-2021/images/am-icon-arrow-right.svg') !important;
+				}
+				.product-card .image{
+					box-shadow: none !important
+				}
+
+	
+    /* Star rating */
+
+        .btt_toc .btt_toc-list li a{
+            color: #000;
+        }
+
+        .post-content .listicle-items{
+			margin-top: 50px !important;
+		}
+
+		.bh-stars {
+			display: flex;
+			justify-content: flex-start;
+			margin: 0rem auto;
+			margin-top: 5px;
+		}
+
+        .bh-stars .star-rating-number{
+            letter-spacing: 1px;
+            color: #212121;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 5px;
+            line-height: normal;
+        }
+	
+		.bh-stars .bh-star {
+			width: 1rem;
+			height: 1rem;
+		}
+	
+		.bh-stars .bh-star .outline {
+			fill: #957731;
+		}
+	
+		.bh-stars .bh-star .full,
+		.bh-stars .bh-star .left-half {
+			fill: transparent;
+		}
+	
+		.bh-stars[data-bh-rating^="1"] .bh-star--1 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="2"] .bh-star--1 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="3"] .bh-star--1 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="4"] .bh-star--1 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="5"] .bh-star--1 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="2"] .bh-star--2 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="3"] .bh-star--2 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="4"] .bh-star--2 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="5"] .bh-star--2 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="3"] .bh-star--3 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="4"] .bh-star--3 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="5"] .bh-star--3 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="4"] .bh-star--4 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="5"] .bh-star--4 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="5"] .bh-star--5 .full {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="0.5"] .bh-star--1 .left-half {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="1.5"] .bh-star--2 .left-half {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="2.5"] .bh-star--3 .left-half {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="3.5"] .bh-star--4 .left-half {
+			fill: #957731;
+		}
+	
+		.bh-stars[data-bh-rating^="4.5"] .bh-star--5 .left-half {
+			fill: #957731;
+		}
+	
+		.other-description-box {
+			margin-top: 20px;
+            border: 1px solid #957731;
+            padding: 10px 30px;
+		}
+
+        .other-description-box h4{
+            text-decoration: underline;
+        }
+	
+		.other-description-box ul {
+			padding-left: 30px;
+		}
+	
+		.other-description-box ul li {
+			font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
+			font-size: 16px;
+			color: #1a1a1a;
+			letter-spacing: -.48px;
+			line-height: 28px;
+			list-style: disc;
+		}
+		
+		.listicle-summary.description {
+			margin-top: 10px;
+			padding: 10px 0 10px;
+		}
+
+        .our-top-pick .btt_toc-list{
+            list-style: none !important;
+            padding-left: 15px !important;
+        }
+
+        .our-top-pick .category{
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.20rem;
+            color: #707070;
+            font-size: 16px;
+        }
+
+        .our-top-pick .product-name{
+            margin: 5px 0px 8px 0px;
+        }
+
+        .our-top-pick .product-name a{
+            font-style: normal;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .our-top-pick .jump-to-link{
+            display: flex;
+            align-items: center;
+        }
+        .our-top-pick .jump-to-link a{
+            font-size: 14px;
+            font-style: normal;
+        }
+
+        .our-top-pick .jump-to-link a:hover{
+            text-decoration: underline;
+        }
+
+        .our-top-pick .jump-to-link span{
+            margin-right: 10px;
+        }
+
+        .our-top-pick .jump-to-link span svg{
+            height: 15px;
+            width: auto;
+        }        
+
+        @media(max-width:650px){         
+            .our-top-pick .product-name {
+                margin: 10px 0px;
+            }
+        }
+        .post-template-single-listicle .listicle-item-card{
+            flex-direction: column; 
+             padding: 0px 40px 45px;
+        }
+
+        @media (max-width: 650px){
+            .post-template-single-listicle .listicle-item-card {
+                padding: 0px 15px 20px !important
+            }            
+        }
+
+        .post-template-single-listicle .listicle-item-card .title{
+            font-size: 24px;
+            line-height: 1.1;
+			letter-spacing: 1px;
+			line-height: 1.3;
+			font-weight: 600;
+			margin-top: 15px;
+			margin-left: 32px;
+			margin-bottom: 10px;
+        }
+
+        @media (max-width: 650px){
+            .post-template-single-listicle .listicle-item-card .title{
+                font-size: 18px;
+                line-height: 1.2;
+            }
+        }
+
+        .post-template-single-listicle .listicle-item-card .image-wrapper{
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .post-template-single-listicle .listicle-item-card .image-wrapper .image{
+            margin: 0 auto;
+            max-width: 52%;
+        }
+
+        @media (max-width: 992px){
+            .post-template-single-listicle .listicle-item-card .image-wrapper .image{
+                max-width: 100%;
+                background-size: cover;
+            }
+        }
+
+        .listicle-item-card .index{
+            letter-spacing: normal;
+            line-height: 1.3;
+            font-family: "Playfair Display",Helvetica Neue,Helvetica,Arial,sans-serif;
+            font-size: 23px;
+            color: #000; 
+            margin-top: 0px;
+            border: 1px solid #000;
+            border-radius: 50%; 
+            width: 33px;
+            height: 33px;
+            text-align: center;
+            font-style: italic;
+			margin-left: 0px !important;
+    		float: left !important;
+			margin-right: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+        }
+
+        @media (max-width: 650px){
+            .listicle-item-card .index{
+                margin-top: 0px;
+            }
+        }
+
+        .bs_col-12 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%
+        }
+
+    @media (min-width:768px) {  
+            .bs_col-md-6{
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        .post-template-single-listicle .listicle-item-card .content{
+            padding-left: 0px !important;
+        }
+
+		.listicle-item-card .content-upper{
+			display: block !important;
+		}
+
+		.listicle-item-card .content-upper .information {
+			width: 100% !important;
+			padding-right: 0px !important;
+		}
+
+		.listicle-item-card .content-upper .image-wrapper {
+			width: 100% !important;
+		}       
+
+		.listicle-item-card{
+			margin-bottom: 10px !important;
+		}
+		</style>
+
+					    
+				
+		
+				<!-- Starts Google Analytics -->
+					<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'UA-15249403-1');
+					</script>
+					<!-- End Google Analytics -->
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v18.2.1 (Yoast SEO v18.4.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>The Top 10 Indian Football Players In 2023</title>
+	<meta name="description" content="With India winning the 2023 SAFF Championship final, we take a look at the top 10 Indian football players in 2023." />
+	<link rel="canonical" href="https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/" />
+	<meta property="og:locale" content="en_IN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The Top 10 Indian Football Players Of 2023" />
+	<meta property="og:description" content="With India winning the 2023 SAFF Championship final, we take a look at the top 10 Indian football players in 2023." />
+	<meta property="og:url" content="https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/" />
+	<meta property="og:site_name" content="AugustMan India" />
+	<meta property="article:published_time" content="2023-07-05T02:30:28+00:00" />
+	<meta property="article:modified_time" content="2023-07-05T06:20:18+00:00" />
+	<meta property="og:image" content="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160303/67410614_133440724553747_4688445919250434030_n-1.jpg" />
+	<meta property="og:image:width" content="800" />
+	<meta property="og:image:height" content="800" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Uddipta Banerjee" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="2 minutes" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="amphtml" href="https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/amp/" /><meta name="generator" content="AMP for WP 1.0.77.38"/><link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.augustman.com\/in\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.4"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<!-- augustman.com/in is managing ads with Advanced Ads 1.32.0 – https://wpadvancedads.com/ --><script id="augus-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.augustman.com/in/wp-includes/css/dist/block-library/style.min.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-styles-css'  href='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/slick/slick.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='selectize-css-css'  href='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/selectize/selectize.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='yoast-css-css'  href='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/yoastAccordian/yoast-faq.css?ver=5.8.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rushhour-minified-styles-css'  href='https://www.augustman.com/in/wp-content/themes/augustman-2021/style.css?ver=1718283693' type='text/css' media='' />
+<script type='text/javascript' src='https://www.augustman.com/in/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' defer='defer' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.augustman.com/in/wp-json/" /><link rel="alternate" type="application/json" href="https://www.augustman.com/in/wp-json/wp/v2/posts/118577" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.augustman.com/in/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.augustman.com/in/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.4" />
+<link rel="alternate" type="application/json+oembed" href="https://www.augustman.com/in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.augustman.com%2Fin%2Fsports%2Fthe-top-10-indian-football-players-of-2023%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.augustman.com/in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.augustman.com%2Fin%2Fsports%2Fthe-top-10-indian-football-players-of-2023%2F&#038;format=xml" />
+                    <script type="text/javascript">
+  function RecordActionToGA(arg, event) {
+      if (event == "productClick") {
+        arg = {
+          'event': 'productClick',
+          'ecommerce': {
+            'click': {
+              'actionField': {
+                'list': arg[0].list
+              },
+              'products': arg
+            }
+          },
+        };
+      }
+      console.log(arg);
+      dataLayer.push(arg);
+    }
+
+    function triggerGA(arg1, arg2) {
+      let data = {
+        'event': 'productClick',
+        'ecommerce': {
+          'click': {
+            'actionField': {
+              'list': 'Search Results'
+            },
+            'products': [{
+              'name': arg1,
+              'id': arg1,
+              'list': arg1,
+              'position': arg2
+            }]
+          }
+        },
+      };
+      RecordActionToGA(data);
+      return true;
+    }
+	var pageType = "single-listicle.php";
+	var monetaryStatus = "Others";
+	var wordCount = "400";
+	var authorName = "Uddipta Banerjee";
+	var contentBucket = "Others";
+	var publish_date = "2023-07-05";
+	dataLayer = [{
+		'event' : 'setDimensions',
+		'pagetype' : pageType,
+		'monetaryStatus' : monetaryStatus,
+		'wordCount' : wordCount,
+		'authorName' : authorName,
+		'contentBucket' : contentBucket,
+		'publish_date': publish_date
+	}];
+         
+  jQuery(document).on("click", ".country-swap > a", function(e){
+    let args = {
+    'event' : 'navigation',
+    'eventCategory' : 'Navigation',
+    'eventAction' : 'Country swap',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+    // e.preventDefault();
+    // console.log(jQuery(this).text());
+  });
+
+  jQuery(document).on("click", ".first-level-mlink, .mnav-link > a, .second-level-mlink", function(e){
+    let args = {
+    'event' : 'navigation',
+    'eventCategory' : 'Navigation',
+    'eventAction' : 'Hamburger',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".first-level-menu-link, .second-level-menu-link, .third-level-menu-link", function(e){
+    let args = {
+    'event' : 'navigation',
+    'eventCategory' : 'Navigation',
+    'eventAction' : 'Header',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".btt_pre_header_menu > a", function(e){
+    let args = {
+    'event' : 'navigation',
+    'eventCategory' : 'Navigation',
+    'eventAction' : 'Header',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".btt_footer_menu > a, .btt_footer_subsite_menu > a", function(e){
+    let args = {
+    'event' : 'navigation',
+    'eventCategory' : 'Navigation',
+    'eventAction' : 'Footer',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".tag .author-name", function(e){
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Author clicks',
+    'eventAction' : 'top',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".left .author-name", function(e){
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Author clicks',
+    'eventAction' : 'bottom',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".tags > a", function(e){
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Tags clicks',
+    'eventAction' : 'Article',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".author-tags > a", function(e){
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Tags clicks',
+    'eventAction' : 'Author',
+    'eventLabel' : jQuery(this).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+  jQuery(document).on("click", ".spotlight-card", function(e){
+    // e.preventDefault();
+    // console.log(jQuery(this).find(".category").eq(0).text() +" - "+jQuery(this).find(".title a").eq(0).text());
+    let args = {
+    'event' : 'midPageCarousel',
+    'eventCategory' : 'mid page carousel',
+    'eventAction' : jQuery(this).find(".category").eq(0).text(),
+    'eventLabel' : jQuery(this).find(".title a").eq(0).text(), 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".parsely-top-10-widget__item > article > a", function(e){
+    //e.preventDefault();
+    //console.log(jQuery(this).text());
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Recommended article clicks',
+    'eventAction' : 'Most Popular',
+    'eventLabel' : jQuery(this).attr("href"), 
+    };
+    RecordActionToGA(args, "");
+  });
+  var banner_id_arr = [];
+  jQuery(document).ready(function(){
+    jQuery('.feature-sliders').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      var dataId = jQuery('.slick-current').attr("data-slick-index");
+      var dataTitle = jQuery('.slick-current').find(".ufs-title").text();
+      let args = {
+ 'event':'promoView',
+  'ecommerce': {
+    'promoView': {
+      'promotions': [
+       {
+         'id': dataTitle,
+         'name': dataTitle,
+         'creative': dataTitle,
+         'position': dataId
+       }]
+    }
+  }
+};
+    if(jQuery.inArray(dataId, banner_id_arr) === -1){
+      RecordActionToGA(args, "");
+      banner_id_arr.push(dataId);
+    }
+    });
+  });
+
+  jQuery(document).on("click", ".ufs-image > a, .ufs-content-wrapper .ufs-title, .ufs-content-wrapper .btn", function(e){
+    // let location = jQuery(this).attr("data-location");
+    let location = "https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/";
+    let title = jQuery(this).parents('.slick-slide').find(".ufs-title").text();
+    let position = parseInt(jQuery(this).parents('.slick-slide').attr("data-slick-index"));
+    // alert(location);
+    let data = {
+        'event': 'promotionClick',
+        'ecommerce': {
+          'promoClick': {
+            'promotions': [{
+              'name': title,
+              'id': title,
+              'list': title,
+              'position': position
+            }]
+          }
+        },
+      };
+      RecordActionToGA(data);
+  });
+
+
+jQuery(document).on("click", ".parsely-top-10-widget__item > article > a", function(e){
+    //e.preventDefault();
+    //console.log(jQuery(this).text());
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Recommended article clicks',
+    'eventAction' : 'Most Popular',
+    'eventLabel' : jQuery(this).attr("href"), 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".btt_social-icon-share-list > a", function(e){
+    // let location = jQuery(this).attr("data-location");
+    let location = "https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/";
+    let social_network = jQuery(this).attr("title");
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Social shares',
+    'eventAction' : location,
+    'eventLabel' : social_network, 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".slick-next, .slick-next-arrow", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/",
+    'eventLabel' : "Next", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".slick-prev, .slick-prev-arrow", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/",
+    'eventLabel' : "Previous", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  /*jQuery(document).on("click", ".feature-sliders-row .slick-next", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "Feature Slider",
+    'eventLabel' : "Next", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".feature-sliders-row .slick-prev", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "Feature Slider",
+    'eventLabel' : "Previous", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".people-events-sliders-txt .slick-next", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "People Slider",
+    'eventLabel' : "Next", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".people-events-sliders-txt .slick-prev", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "People Slider",
+    'eventLabel' : "Previous", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".first-spotlight .slick-next", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "Destination Slider",
+    'eventLabel' : "Next", 
+    };
+    RecordActionToGA(args, "");
+  });
+
+  jQuery(document).on("click", ".first-spotlight .slick-prev", function(e){
+    let args = {
+    'event' : 'customEvent',
+    'eventCategory' : 'Slider Clicks',
+    'eventAction' : "Destination Slider",
+    'eventLabel' : "Previous", 
+    };
+    RecordActionToGA(args, "");
+  });*/
+
+  jQuery(document).on("click", ".rps-list > article > a", function(e){
+    //e.preventDefault();
+    //console.log(jQuery(this).text());
+    let args = {
+    'event' : 'contentPageEvent',
+    'eventCategory' : 'Recommended article clicks',
+    'eventAction' : 'You may also like',
+    'eventLabel' : jQuery(this).attr("href"), 
+    };
+    RecordActionToGA(args, "");
+  });
+</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"WebSite","name":"AugustMan India","url":"https:\/\/www.augustman.com\/in\/","@id":"https:\/\/www.augustman.com\/in\/#website","inLanguage":"en-IN","description":"The Modern Man&amp;#039;s Lifestyle Companion"}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"Organization","name":"AugustMan India","url":"https:\/\/www.augustman.com\/in\/","logo":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2022\/09\/22104013\/am-logo.png","sameAs":["https:\/\/twitter.com\/augustman\/","https:\/\/www.instagram.com\/augustmanindia\/","https:\/\/www.facebook.com\/augustman\/"]}</script>
+<script type="application/ld+json"> {"@context":"http:\/\/schema.org","@type":"WebPage","inLanguage":"en-IN","url":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/","description":"With India winning the 2023 SAFF Championship final, we take a look at the top 10 Indian football players in 2023.","@id":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/#webpage","datePublished":"2023-07-05T02:30:28Z","dateModified":"2023-07-05T06:20:18Z","name":"The Top 10 Indian Football Players In 2023","primaryImageOfPage":{"@type":"ImageObject","@id":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/#primaryimage","inLanguage":"en-IN","url":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2023\/07\/04160303\/67410614_133440724553747_4688445919250434030_n-1.jpg?tr=w-1200,h-900","width":"1200","height":"900"}} </script> 
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Fashion","url":"https:\/\/www.augustman.com\/in\/fashion\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Grooming","url":"https:\/\/www.augustman.com\/in\/grooming\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Watches","url":"https:\/\/www.augustman.com\/in\/watches\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Culture","url":"https:\/\/www.augustman.com\/in\/entertainment\/culture\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Art","url":"https:\/\/www.augustman.com\/in\/entertainment\/culture\/art-design\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Design","url":"https:\/\/www.augustman.com\/in\/entertainment\/culture\/design\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Events","url":"https:\/\/www.augustman.com\/in\/entertainment\/culture\/events\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Film &amp; TV","url":"https:\/\/www.augustman.com\/in\/entertainment\/film-tv\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Living","url":"https:\/\/www.augustman.com\/in\/entertainment\/culture\/living\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Music","url":"https:\/\/www.augustman.com\/in\/entertainment\/music\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Gear","url":"https:\/\/www.augustman.com\/in\/gear\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Motoring","url":"https:\/\/www.augustman.com\/in\/gear\/motoring\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Tech","url":"https:\/\/www.augustman.com\/in\/gear\/tech\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Dining","url":"https:\/\/www.augustman.com\/in\/dining\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Food","url":"https:\/\/www.augustman.com\/in\/dining\/food\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Drinks","url":"https:\/\/www.augustman.com\/in\/dining\/drinks\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Travel","url":"https:\/\/www.augustman.com\/in\/entertainment\/travel\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Wellness","url":"https:\/\/www.augustman.com\/in\/wellness\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Fitness","url":"https:\/\/www.augustman.com\/in\/wellness\/fitness\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"Health","url":"https:\/\/www.augustman.com\/in\/wellness\/health\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"People","url":"https:\/\/www.augustman.com\/in\/people\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"August Mentors","url":"https:\/\/www.augustman.com\/in\/people\/august-mentor\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.augustman.com\/in\/#table-of-content","name":"E-magazine","url":"https:\/\/www.magzter.com\/SG\/Burda-Singapore-Pte-Ltd\/August-Man-SG\/Lifestyle\/"}]}</script>
+<script type="application/ld+json"> {"@context":"http:\/\/schema.org","@type":"NewsArticle","headline":"The Top 10 Indian Football Players Of 2023","inLanguage":"en-IN","url":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/","image":{"@type":"ImageObject","url":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2023\/07\/04160303\/67410614_133440724553747_4688445919250434030_n-1.jpg?tr=w-1200,h-900","width":"1200","height":"900"},"datePublished":"2023-07-05T02:30:28Z","dateModified":"2023-07-05T06:20:18Z","articleSection":"Sports","articleBody":"Football is not just another sport; it is a global phenomenon. Events like the FIFA World Cup, UEFA Euro and Copa America attract worldwide attention, even from those folks who are usually disinterested in sports. In India too, football enjoys a massive fan following. Debates around the best football players and popular football teams are a part of most college gabfests. Not to mention, many of us stay awake well past midnight to watch matches involving our favourite football clubs. Despite the massive popularity of football in India, sadly our country\u0027s own football players seldom get that level of attention. In a country of nearly 1.5 billion individuals, the matches of the Indian national football team are viewed by just thousands. Ask any self-proclaimed football fan, and he or she might not be able to name even five Indian football players. This, unfortunately, has been the state of affairs for Indian football for years.\r\n\r\nHowever, the situation has been slowly but steadily improving in recent years. While the Indian Super League has a considerable role to play in this change, the impressive performance of the national football team is also bringing Indian football into the mainstream. Players like Sunil Chhetri, Gurpreet Singh Sandhu and Sandesh Jhingan have started becoming household names.\r\n\r\nWith India winning the final of the 2023 South Asian Football Federation Championship against Kuwait at the Sree Kanteerava Stadium in Bengaluru, we believe it\u0027s a good idea to look at the ten best Indian football players in 2023.\r\n\r\n\r\nThe 10 best Indian football players of 2023","keywords":["Football","Football Players","Footballers","gurpreet singh sandhu","Indian Football Team","sandesh jhingan","Sports","Sunil Chhetri"],"author":{"@type":"Person","name":"Uddipta Banerjee","url":"https:\/\/www.augustman.com\/in\/author\/uddipta\/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/"},"publisher":{"@type":"Organization","name":"AugustMan India","logo":{"@type":"ImageObject","url":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2022\/09\/22104013\/am-logo.png","width":"500","height":"100"},"url":"https:\/\/www.augustman.com\/in\/"},"description":"With India winning the 2023 SAFF Championship final, we take a look at the top 10 Indian football players in 2023."} </script> 
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":{"@type":"Person","@id":"https:\/\/www.augustman.com\/in\/#\/schema\/person\/4d13bf4a1f3e645e93c61271e936efd1","name":"Uddipta Banerjee","description":"Uddipta writes about sports and watches besides occasionally venturing into the world of automobiles and technology. He was associated with the Indian Express in the capacity of a sub-editor at their Lifestyle desk. A journalism and mass communication student from Xavier Institute of Communications, Mumbai, Uddipta devotes most of his leisure time to photography and filmmaking. He has contributed photographs to Vogue Italia and several exhibits, and has directed award-winning short films screened at film festivals in India and abroad.","sameAs":["https:\/\/www.instagram.com\/uddipta.banerjee\/?igshid=ZDc4ODBmNjlmNQ","https:\/\/www.linkedin.com\/in\/uddipta-banerjee-257b261b7"],"url":"https:\/\/www.augustman.com\/in\/author\/uddipta\/","image":{"@type":"ImageObject","inLanguage":"en-IN","@id":"https:\/\/www.augustman.com\/in\/#\/schema\/person\/image\/","url":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2023\/09\/15112151\/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg","contentUrl":"https:\/\/images.augustman.com\/wp-content\/uploads\/sites\/6\/2023\/09\/15112151\/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg","caption":"Uddipta Banerjee"}}}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","@id":"https:\/\/www.augustman.com\/in\/sports\/the-top-10-indian-football-players-of-2023\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{"@id":"https:\/\/www.augustman.com\/in\/"}},{"@type":"ListItem","position":2,"name":"Sports","item":{"@id":"https:\/\/www.augustman.com\/in\/sports\/"}},{"@type":"ListItem","position":3,"name":"The Top 10 Indian Football Players Of 2023"}]}</script>
+<script type='text/javascript'>
+var jsScripts = [];
+var flagOutbrain = 1;
+var siteLocation = 'in';
+</script>
+
+<!-- Header Bidding - AnyMind ATS Tag implementation -->
+<script async type="application/javascript" src="//anymind360.com/js/9277/ats.js"></script>
+
+<!-- Google Tag Services -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<!-- End Google Tag Services -->
+
+<!-- Google Ads -->
+<script> 
+var adSlots = {}; 
+let adSlotWebInterstitial = '';	
+window.googletag = window.googletag || {cmd: []};  
+googletag.cmd.push(function() { 
+              
+  var mapping1 = googletag.sizeMapping() 
+    .addSize([1140, 0], [[1140, 300], [970, 250], [1440, 350], [1280,580], 'fluid']) 
+    .addSize([970, 0], [[1140, 300], [970, 250], [1280,580], 'fluid']) 
+    .addSize([0, 0], [[320, 50], [300, 100], [320, 100], [320, 330], 'fluid']) 
+    .build(); 
+
+  var mapping2 = googletag.sizeMapping() 
+    .addSize([972, 0], [[300, 1200], [300, 600], 'fluid', [300, 250]]) 
+    .addSize([0, 0], [[300, 250], [300, 460], [300, 600], [320, 330], 'fluid']) 
+    .build(); 
+	
+  var mapping3 = googletag.sizeMapping()
+            .addSize([720, 0], [[728,90]])
+            .addSize([0, 0], [[320,100],[320,50]])
+            .build();
+	// Define a web interstitial ad slot.
+        adSlotWebInterstitial = googletag.defineOutOfPageSlot("/1021996/web_interstitial",
+          googletag.enums.OutOfPageFormat.INTERSTITIAL);
+
+        // Slot returns null if the page or device does not support interstitials.
+        if (adSlotWebInterstitial) {
+          // Enable optional interstitial triggers and register the slot.
+          adSlotWebInterstitial.addService(googletag.pubads()).setConfig({
+            interstitial: {
+              triggers: {
+                navBar: true,
+                unhideWindow: true,
+              },
+            },
+          });
+		}
+	//////////////////////
+/*
+  //Adslot 1 declaration 
+  googletag.defineSlot('/1021996/Masthead', ['fluid',[1140,300],[970,250]], 'div-gpt-ad-4773716-1').defineSizeMapping(mapping1).addService(googletag.pubads()); 
+  googletag.defineSlot('/1021996/Masthead', ['fluid',[1140,300],[970,250]], 'div-gpt-ad-4773716-1_1').defineSizeMapping(mapping1).addService(googletag.pubads()); 
+  //Adslot 2 declaration 
+  googletag.defineSlot('/1021996/Medium_Rectangle', ['fluid',[300,600],[300,250],[300,1200],[300,460]], 'div-gpt-ad-4773716-2').defineSizeMapping(mapping2).addService(googletag.pubads()); 
+  googletag.defineSlot('/1021996/Medium_Rectangle', ['fluid',[300,600],[300,250],[300,1200],[300,460]], 'div-gpt-ad-4773716-2_1').defineSizeMapping(mapping2).addService(googletag.pubads()); 
+  googletag.defineSlot('/1021996/Medium_Rectangle', ['fluid',[300,600],[300,250],[300,1200],[300,460]], 'div-gpt-ad-4773716-2_2').defineSizeMapping(mapping2).addService(googletag.pubads()); 
+  //Adslot 3 declaration 
+*/
+
+  googletag.defineSlot('/1021996/Interscroller', [[1,1],'fluid'], 'div-gpt-ad-4773716-3').addService(googletag.pubads()); 
+  //Adslot 4 declaration 
+  googletag.defineSlot('/1021996/Skinner', [[1,1],'fluid'], 'div-gpt-ad-4773716-4').addService(googletag.pubads()); 
+  //Adslot 5 declaration 
+  googletag.defineSlot('/1021996/Interstitial', [[1,1],'fluid'], 'div-gpt-ad-4773716-5').addService(googletag.pubads()); 
+  //Adslot 6 declaration 
+  googletag.defineSlot('/1021996/AdhesiveMobileBanner', [[320, 100], [320, 50], [728, 90]], 'div-gpt-ad-1620191194227-0').defineSizeMapping(mapping3).addService(googletag.pubads()); 
+                  
+  // The values of the below keys need to be dynamic and changed accordingly 
+  
+  googletag.pubads().setTargeting('Env', ['production'])
+	  .setTargeting('Location', ['in'])
+	  .setTargeting('parentcategory', ['sports'])
+	  .setTargeting('category', ['sports'])
+	  .setTargeting('url', ['/in/sports/the-top-10-indian-footba'])
+	  .setTargeting('Title', ['AM_WS']).setTargeting('IsAMP', [false]);
+  googletag.pubads().enableSingleRequest();	
+  googletag.pubads().collapseEmptyDivs(); 
+  googletag.pubads().setCentering(true);
+  googletag.enableServices(); 
+}); 
+</script> 
+<!-- End Google Ads -->
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K5XT3G');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code --> 
+<script> 
+!function(f,b,e,v,n,t,s) 
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod? 
+n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; 
+n.queue=[];t=b.createElement(e);t.async=!0; 
+t.src=v;s=b.getElementsByTagName(e)[0]; 
+s.parentNode.insertBefore(t,s)}(window, document,'script', 
+'https://connect.facebook.net/en_US/fbevents.js'); 
+fbq('init', '367733393847634'); 
+fbq('track', 'PageView'); 
+</script> 
+<noscript><img height="1" width="1" style="display:none" 
+src="https://www.facebook.com/tr?id=367733393847634&ev=PageView&noscript=1" 
+/></noscript> 
+<!-- End Facebook Pixel Code -->
+<!-- The following script loads the Browsi Engine A.I -->
+<script src="https://cdn.browsiprod.com/bootstrap/bootstrap.js" id="browsi-tag"
+data-pubKey="burdamedia" data-siteKey="augustman" async></script>
+
+<script>
+window.browsitag = window.browsitag || {};
+window.browsitag.cmd = window.browsitag.cmd || [];
+</script>
+<link rel="icon" href="https://images.augustman.com/wp-content/uploads/sites/6/2022/11/08124253/favicon.png" sizes="32x32" />
+<link rel="icon" href="https://images.augustman.com/wp-content/uploads/sites/6/2022/11/08124253/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://images.augustman.com/wp-content/uploads/sites/6/2022/11/08124253/favicon.png" />
+<meta name="msapplication-TileImage" content="https://images.augustman.com/wp-content/uploads/sites/6/2022/11/08124253/favicon.png" />
+
+
+		           		<script type="text/javascript">
+			(function () {
+				/** CONFIGURATION START **/
+				var _sf_async_config = (window._sf_async_config = window._sf_async_config || {});
+				_sf_async_config.uid = 66571;
+				_sf_async_config.domain = "augustman.com";
+				_sf_async_config.flickerControl = false;
+				_sf_async_config.useCanonical = true;
+				_sf_async_config.useCanonicalDomain = true;
+				(_sf_async_config.sections =
+					'in'),
+					'in Sports';
+				_sf_async_config.authors = "Uddipta Banerjee";
+				/** CONFIGURATION END **/
+				function loadChartbeat() {
+					var e = document.createElement("script");
+					var n = document.getElementsByTagName("script")[0];
+					e.type = "text/javascript";
+					e.async = true;
+					e.src = "//static.chartbeat.com/js/chartbeat.js";
+					n.parentNode.insertBefore(e, n);
+				}
+				loadChartbeat();
+			})();
+		</script>
+		<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
+		 <script>
+	function readCookie(name) {
+		let nameEQ = name + "=";
+		let ca = document.cookie.split(';');
+		for (let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+		}
+		return null;
+	}
+
+	if(readCookie('recaptcha_score') && readCookie('recaptcha_score')<0.3){
+		window.location.href = "https://www.augustman.com/in/challenge-page/";
+	}
+</script>	</head>
+
+	<body class="post-template post-template-single-listicle post-template-single-listicle-php single single-post postid-118577 single-format-standard wp-custom-logo wp-embed-responsive group-blog aa-prefix-augus-" live-site>
+		<a class="skip-link screen-reader-text" href="#content" aria-label="Link"><?php esc_html_e( 'Skip to content', 'rushhour' ); ?></a>
+
+		<div class="site-header-search"><form class="search-form search-form__header" role="search" action="https://www.augustman.com/in/">   
+<input type="submit" value="" class="btn-search">
+    <input type="search" class="search-input" name="s" value="" placeholder="Search AUGUSTMAN" required>
+            <input type="hidden" class="search-postType" name="post_type" value="post">
+           
+        <input type="hidden" class="search-category" name="category_name" value="">
+     	            <input type="hidden" class="search-sort" name="orderby" value="relevance">
+            <input type="hidden" class="search-order" name="order" value="desc">
+        </form>
+</div>
+
+		<div class="masthead-container">
+						<div class="augus-masthead-placement" id="augus-1999713937"><!-- Sync AdSlot 1 for Ad unit 'Masthead' ### Size: ['fluid',[1140,300],[970,250]] -->
+<div id='div-gpt-ad-4773716-1' style="width:100%">
+
+<!--
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-1'); });
+  </script>
+-->
+	
+	
+	<script>
+		window.browsitag.cmd.push(() => {
+			window.browsitag.display("div-gpt-ad-4773716-1", {
+				sizes: [{}],
+				adUnit: "/1021996/Masthead",
+				disableViewabilityOptimization: false ,
+				positionTag: 'top',
+			});
+		});
+	</script>
+	
+</div>
+<!-- End AdSlot 1 --></div>
+		</div>		
+
+		<div id="masthead-sticky-wrapper">
+			<header id="masthead" class="site-header" role="banner">
+				<div>
+					<div class="site-header-upper">
+						<div class="site-branding"><a href="https://www.augustman.com/in/" class="custom-logo-link" rel="home"><img width="442" height="62" src="https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo.png" class="custom-logo" alt="AugustMan India" srcset="https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo.png 442w, https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo-300x42.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></a></div>
+
+						<div class="site-header_right location-select-wrapper">
+							<div class="subsite">
+																<div class="current-site">IN</div>
+								<ul class="header-subsite-menu">
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom country-swap menu-item-89397">
+										<a href="/sg/">SG</a>
+									</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom country-swap menu-item-89398">
+										<a href="/my/">MY</a>
+									</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom country-swap menu-item-89399">
+										<a href="/th/">TH</a>
+									</li>
+																		<li class="menu-item menu-item-type-custom menu-item-object-custom country-swap menu-item-92664">
+										<a href="/hk/">HK</a>
+									</li>
+																	</ul>
+							</div> 
+						</div>
+
+						<div class="btn-search site-header-search-icon"></div>
+						
+						<div class="site-mobile-logo">
+							<a href="https://www.augustman.com/in/" class="custom-logo-link" rel="home"><img width="442" height="62" src="https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo.png" class="custom-logo" alt="AugustMan India" srcset="https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo.png 442w, https://images.augustman.com/wp-content/uploads/sites/6/2022/09/22104013/am-logo-300x42.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></a>
+						</div>
+												
+					</div>			
+
+					<div class="site-header-lower">
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+														<ul class="btt-header-menu">
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85966 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/fashion/">Fashion</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/fashion/trending/">Trending</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/fashion/guides/">Guides</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85967 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/grooming/">Grooming</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/grooming/skincare/">Skincare</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/grooming/haircare/">Haircare</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85968">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/watches/">Watches</a>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-118438">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/news/">News</a>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-118439 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/entertainment/">Entertainment</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item has-children-menu">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/entertainment/culture/">Culture</a>
+																						<!-- 2ND LEVEL -->
+											<ul class="level-menu-list second-level-menu-list">
+																								<li class="second-level-menu-item">
+													<a href="https://www.augustman.com/in/entertainment/culture/art-design/" class="second-level-menu-link">Art</a>
+
+																									</li>
+																								<li class="second-level-menu-item">
+													<a href="https://www.augustman.com/in/entertainment/culture/design/" class="second-level-menu-link">Design</a>
+
+																									</li>
+																								<li class="second-level-menu-item">
+													<a href="https://www.augustman.com/in/entertainment/culture/events/" class="second-level-menu-link">Events</a>
+
+																									</li>
+																								<li class="second-level-menu-item">
+													<a href="https://www.augustman.com/in/entertainment/culture/living/" class="second-level-menu-link">Living</a>
+
+																									</li>
+																							</ul>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/entertainment/travel/">Travel</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/entertainment/film-tv/">Film &amp; TV</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/entertainment/music/">Music</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85980 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/gear/">Gear</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/gear/motoring/">Motoring</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/gear/tech/">Tech</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/gear/gaming/">Gaming</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85983 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/dining/">Dining</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/dining/food/">Food</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/dining/drinks/">Drinks</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85989 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/wellness/">Wellness</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/wellness/fitness/">Fitness</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/wellness/health/">Health</a>
+																					</li>
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/wellness/astro/">Astro</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category btt_header_menu menu-item-85992 menu-item-has-children">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/people/">People</a>
+																		<ul class="level-menu-list btt-sub-menu">
+																				<li class="first-level-menu-item ">
+											<a class="first-level-menu-link" href="https://www.augustman.com/in/people/august-mentor/">August Mentors</a>
+																					</li>
+																			</ul>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent btt_header_menu menu-item-118443">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/sports/">Sports</a>
+																	</li>
+																<li class="first-level-menu-item btt-header-menu-item  menu-item menu-item-type-post_type menu-item-object-page btt_header_menu menu-item-129922">
+									<a class="first-level-menu-link btt-header-menu-link" href="https://www.augustman.com/in/web-stories/">Web Stories</a>
+																	</li>
+															</ul>
+						</nav>						
+					</div>
+
+					<div class="menu-toggle-m hamburger">
+						<div class="hamburger-box"></div>
+					</div>
+
+					<aside class="jm-mnav-wrapper">
+						<nav>
+							<ul class="mobile-navigation-list">
+																<li>
+									<a href="https://www.augustman.com/in/fashion/" class="first-level-mlink">
+										Fashion
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/fashion/trending/">Trending</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/fashion/guides/">Guides</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/grooming/" class="first-level-mlink">
+										Grooming
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/grooming/skincare/">Skincare</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/grooming/haircare/">Haircare</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/watches/" class="first-level-mlink">
+										Watches
+									</a>
+
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/news/" class="first-level-mlink">
+										News
+									</a>
+
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/entertainment/" class="first-level-mlink">
+										Entertainment
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link has-children-menu">
+											<a href="https://www.augustman.com/in/entertainment/culture/">Culture</a>
+
+																						<button class="btn-second-level-toggler">+</button>
+											<ul class="second-level-child-mlist">
+																								<li>
+													<a href="https://www.augustman.com/in/entertainment/culture/art-design/" class="second-level-mlink">Art</a>
+
+																									</li>
+																								<li>
+													<a href="https://www.augustman.com/in/entertainment/culture/design/" class="second-level-mlink">Design</a>
+
+																									</li>
+																								<li>
+													<a href="https://www.augustman.com/in/entertainment/culture/events/" class="second-level-mlink">Events</a>
+
+																									</li>
+																								<li>
+													<a href="https://www.augustman.com/in/entertainment/culture/living/" class="second-level-mlink">Living</a>
+
+																									</li>
+																							</ul>
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/entertainment/travel/">Travel</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/entertainment/film-tv/">Film &amp; TV</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/entertainment/music/">Music</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/gear/" class="first-level-mlink">
+										Gear
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/gear/motoring/">Motoring</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/gear/tech/">Tech</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/gear/gaming/">Gaming</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/dining/" class="first-level-mlink">
+										Dining
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/dining/food/">Food</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/dining/drinks/">Drinks</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/wellness/" class="first-level-mlink">
+										Wellness
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/wellness/fitness/">Fitness</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/wellness/health/">Health</a>
+
+																					</li>
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/wellness/astro/">Astro</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/people/" class="first-level-mlink">
+										People
+									</a>
+
+																		<button class="btn-first-level-toggler" aria-label="button"></button>
+									<ul class="first-level-child-mlist">
+																				<li class="mnav-link ">
+											<a href="https://www.augustman.com/in/people/august-mentor/">August Mentors</a>
+
+																					</li>
+																			</ul>
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/sports/" class="first-level-mlink">
+										Sports
+									</a>
+
+																	</li>
+																<li>
+									<a href="https://www.augustman.com/in/web-stories/" class="first-level-mlink">
+										Web Stories
+									</a>
+
+																	</li>
+															</ul>
+						</nav>
+					</aside>
+				</div>
+			</header>
+			<div class="clear"></div>
+		</div>
+
+		<div id="page" class="site">
+			<div id="content" class="site-content"> 
+
+
+<main id="main" class="site-main" role="main">
+    
+
+    <article class="post-118577 current-article" data-vidy-slug="the-top-10-indian-football-players-of-2023">
+
+        <div class="entry-header">
+                    <div class="post-breadcrumbs">
+  <div class="post-breadcrumbs-inner large-container">
+    <div class="breadcrumb"><span><span><a class="bread-link bread-home" href="https://www.augustman.com/in/" title="Home">Home</a> &gt; </span><span><a href="https://www.augustman.com/in/sports/">Sports</a></span><span> &gt; </span><span><strong class="bread-current bread-118577" title="The Top 10 Indian Football Players Of 2023">The Top 10 Indian Football Players Of 2023</strong></span></span></div>
+  </div>
+</div>
+            
+
+
+
+<div class="inner-content-wrapper">
+    <div class="post-info-wrapper large-container">
+        <div class="post-info">
+                                          <div class="featured-image">
+                
+                <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60"  data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg?tr=w-900 900w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg?tr=w-1366 1366w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg?tr=w-1920 1920w"  alt="The Top 10 Indian Football Players Of 2023" height="720" width="100%" sizes="(max-width: 400px) 100vw, (max-width: 900px) 75vw, (max-width: 1366px) 100vw, 1920px">
+              </div>
+              <!-- <img class="featured-image" src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04160433/253417787_858842504815332_2727740568620221484_n-2.jpg" alt="The Top 10 Indian Football Players Of 2023"> -->
+                                                                                                          <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                                                                      <h1 class="title">The Top 10 Indian Football Players Of 2023</h1>
+                                        
+<div class="am-post-before-content post-before-content clearfix">
+        <div class="post-before-content_author clearfix">
+        <div class="item-info date">
+                                                <a href="https://www.augustman.com/in/author/uddipta/">
+                                    By:&nbsp;<span>Uddipta Banerjee</span>
+                                    </a>
+                                        <span class="only-desktop">&nbsp;|&nbsp;</span>
+            <div class="mobile-block">
+                <span>
+		                                    Published: <span>Jul 05, 2023 08:00 AM IST</span>
+                		</span>
+    </div>
+                    <span class="only-desktop">&nbsp;|&nbsp;</span>
+            <div class="mobile-block">
+                <span>
+                12 min read
+                </span>
+            </div>
+                </div>
+    </div>
+    <div class="post-share-next-wrapper clearfix">
+        <div class="post-before-content_share">
+            <div class="share">
+	<!-- CUSTOM SHARE ICONS -->
+	<div class="btt_social-icon-share">
+
+		
+	<a href="https://www.facebook.com/sharer.php?u=https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/&t=The Top 10 Indian Football Players Of 2023" rel="nofollow noopener" target="_blank" class="icon-link" aria-label="facebook">
+		<span class="icon-box">
+			<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+				<path fill="#000"
+					d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z">
+				</path>
+			</svg>
+		</span>
+	</a>
+
+
+	<a href="https://twitter.com/intent/tweet?text=The Top 10 Indian Football Players Of 2023https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/" title="The Top 10 Indian Football Players Of 2023"
+		target="_blank" rel="nofollow noopener" class="icon-link" aria-label="twitter">
+		<span class="icon-box">
+			<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+				<path fill="#000"
+					d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z">
+				</path>
+			</svg>
+		</span>
+	</a>
+
+	<a href="mailto:?The Top 10 Indian Football Players Of 2023&body=https://www.augustman.com/in/sports/the-top-10-indian-football-players-of-2023/" title="The Top 10 Indian Football Players Of 2023" rel="nofollow noopener" target="_blank" class="icon-link" aria-label="Email">
+		<span class="icon-box">
+			<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+				<path fill="#000"
+					d="M26 21.25v-9s-9.1 6.35-9.984 6.68C15.144 18.616 6 12.25 6 12.25v9c0 1.25.266 1.5 1.5 1.5h17c1.266 0 1.5-.22 1.5-1.5zm-.015-10.765c0-.91-.265-1.235-1.485-1.235h-17c-1.255 0-1.5.39-1.5 1.3l.015.14s9.035 6.22 10 6.56c1.02-.395 9.985-6.7 9.985-6.7l-.015-.065z">
+				</path>
+			</svg>
+		</span>
+	</a>
+
+
+		
+
+
+
+	</div>
+
+
+	<style>
+		.btt_social-icon-share {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.btt_social-icon-share .icon-link {
+			padding: 0 2px;
+			float: left;
+			line-height: 16px;
+			cursor: pointer;
+			display: block;
+		}
+
+		.btt_social-icon-share .icon-link .icon-box {
+			border-radius: 50% !important;
+			padding: 4px !important;
+			display: block;
+			overflow: hidden;
+			height: 32px;
+			line-height: 32px;
+			padding: 0;
+			width: 32px;
+			opacity: 1;
+			/* background-color: #ac9a82 !important; */
+		}
+
+		.btt_social-icon-share .icon-link:hover .icon-box {
+			opacity: .7;
+		}
+
+		@media (max-width: 650px) {
+			.btt_social-icon-share {
+				justify-content: flex-start;
+			}
+
+			.btt_social-icon-share .icon-box {
+				width: 40px !important;
+				height: 40px !important;
+			}
+		}
+	</style>
+
+</div>        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+<div id="pHeroMob"></div>
+        </div>
+
+        <div class="entry-content large-container">
+            <div class="layout-with-sidebar">
+              <div class="primary">
+                  
+<style>
+    .safariSliderBox.safariSliderImage .gallery-icon img {
+          width: 100vw !important;
+          height: auto !important;
+          max-height: 100% !important;
+          /* max-width: initial !important; */
+      }
+  </style>
+
+<div id="post-118577-content" class="safariSliderBox safariSliderImage post-content " >
+    <div class="paragraph">
+        <p>Football is not just another sport; it is a global phenomenon. Events like the FIFA World Cup, UEFA Euro and Copa America attract worldwide attention, even from those folks who are usually disinterested in sports. In India too, football enjoys a massive fan following. Debates around the best football players and popular football teams are a part of most college gabfests. Not to mention, many of us stay awake well past midnight to watch matches involving our favourite football clubs. Despite the massive popularity of football in India, sadly our country&rsquo;s own football players seldom get that level of attention. In a country of nearly 1.5 billion individuals, the matches of the Indian national football team are viewed by just thousands. Ask any self-proclaimed football fan, and he or she might not be able to name even five Indian football players. This, unfortunately, has been the state of affairs for Indian football for years.</p>
+<p>However, the situation has been slowly but steadily improving in recent years. While the <a href="https://www.augustman.com/in/people/indian-super-league-best-teams/" target="_blank" rel="noopener">Indian Super League</a> has a considerable role to play in this change, the impressive performance of the national football team is also bringing Indian football into the mainstream. Players like Sunil Chhetri, Gurpreet Singh Sandhu and Sandesh Jhingan have started becoming household names.</p><div class="interscroller"><div class="augus-inline-interscroller" id="augus-1543982557"><!-- Sync AdSlot 3 for Ad unit 'Interscroller' ### Size: [[1,1],'fluid'] -->
+  <div id="div-gpt-ad-4773716-3" style="width: 100%">
+    <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-3'); }); 
+    </script>
+  </div>
+  <!-- End AdSlot 3 --></div></div>
+<p>With India winning the final of the 2023 South Asian Football Federation Championship against Kuwait at the Sree Kanteerava Stadium in Bengaluru, we believe it&rsquo;s a good idea to look at the ten best Indian football players in 2023.</p>
+    <div class="inline-related-posts row-fix bb">
+        <div class="inline-rps">
+                                                            				
+    
+
+ 
+
+
+<article class="post-91581 card horizontal-card related">
+
+    <a href="https://www.augustman.com/in/sports/the-richest-footballers-in-the-world/">    
+        <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg)"></div> -->
+        <div class="image">
+            <img src="" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2022/12/04160638/leo-messi-500x500.jpeg?tr=w-800 800w" alt="The 10 Richest Footballers In The World Right Now" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+        </div>
+    </a>
+
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/the-richest-footballers-in-the-world/">
+                <h2 class="title">
+                    <span class="title">The 10 Richest Footballers In The World Right Now</span>
+                </h2>
+            </a>           
+            <div class="post-date">
+              <span class="date">By Manas Sen Gupta, Mar 06</span>
+            </div>
+        </div>
+</article>
+
+				                                                            				
+    
+
+ 
+
+
+<article class="post-102200 card horizontal-card related">
+
+    <a href="https://www.augustman.com/in/entertainment/culture/events/fifa-awards-2022-complete-winners-list/">    
+        <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg)"></div> -->
+        <div class="image">
+            <img src="" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/28094403/fifa-awards-2023-500x500.jpg?tr=w-800 800w" alt="Best FIFA Football Awards 2022: From Lionel Messi To Alexia Putellas, Check Out The Complete List Of Winners" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+        </div>
+    </a>
+
+        <div class="information">
+                <div class="categories">
+                                                                                                                                        <a href="https://www.augustman.com/in/entertainment/culture/" title="Culture">    
+                                            <span class="category">Culture</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/entertainment/culture/events/fifa-awards-2022-complete-winners-list/">
+                <h2 class="title">
+                    <span class="title">Best FIFA Football Awards 2022: From Lionel Messi To Alexia Putellas, Check Out The Complete List Of Winners</span>
+                </h2>
+            </a>           
+            <div class="post-date">
+              <span class="date">By Sanika Achrekar, Feb 28</span>
+            </div>
+        </div>
+</article>
+
+				                    </div>
+    </div>
+
+<h2>The 10 best Indian football players of 2023</h2>
+
+
+    </div>
+
+    
+                <div class="btt_toc table-content">
+            <h2 class="btt_toc-header">Jump To / Table of Contents</h2>
+            <ul class="btt_toc-list">
+                                <li>
+                    <a href="#1">Gurpreet Singh Sandhu</a>
+                </li>
+                                <li>
+                    <a href="#2">Sandesh Jhingan</a>
+                </li>
+                                <li>
+                    <a href="#3">Anwar Ali</a>
+                </li>
+                                <li>
+                    <a href="#4">Pritam Kotal</a>
+                </li>
+                                <li>
+                    <a href="#5">Rowllin Borges</a>
+                </li>
+                                <li>
+                    <a href="#6">Anirudh Thapa</a>
+                </li>
+                                <li>
+                    <a href="#7">Bipin Singh Thounaojam</a>
+                </li>
+                                <li>
+                    <a href="#8">Udanta Singh Kumam</a>
+                </li>
+                                <li>
+                    <a href="#9">Lallianzuala Chhangte</a>
+                </li>
+                                <li>
+                    <a href="#10">Sunil Chhetri</a>
+                </li>
+                            </ul>
+        </div>
+        
+                                                                                                                                    
+        <div class="listicle-items">
+                            
+
+<div class="card listicle-item-card clearfix" id="1">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">01</div>
+                <div class="title">Gurpreet Singh Sandhu</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 560 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg?tr=w-1000 1000w"
+                        alt="Gurpreet Singh Sandhu"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/22201537/Untitled-design-3-560x560.jpg" alt="Gurpreet Singh Sandhu"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>One of the biggest names in Indian football, <a href="https://www.augustman.com/in/sports/gurpreet-singh-sandhu-career-stats-and-net-worth/" target="_blank" rel="noopener">Gurpreet Singh Sandhu</a> is an Indian goalkeeper who plays for the Indian national football team in the international sphere, and for Bengaluru FC in the ISL. The 31-year-old towers over his fellow teammates with a massive height of 198 centimetres. However, it is not his physical stature which makes him one mean guard between the posts, although his height does hand him an edge over other goalkeepers. Sandhu’s agility, coupled with his super-fast reflexes, has been his key to success.</p>
+<p>The most vital statistic to judge a goalkeeper is the number of clean sheets that the goalie has maintained. Gurpreet Singh Sandhu holds the record for most clean sheets playing for India, with his 24th clean sheet coming against Lebanon in the semi-finals of the 2023 <a href="https://www.augustman.com/in/sports/saff-championship-2023-prize-money/" target="_blank" rel="noopener">SAFF Championship</a>. His clean sheets record at the domestic level is also par excellence. In fact, Sandhu has been the recipient of the ISL Golden Glove Award for a record two times in back-to-back seasons (2018-19 and 2019-20).</p>
+<p>Sandhu has also captained the Indian national football team a few times, leading the team to a 4-1 win against Puerto Rico in his first match wearing the armband. Under his leadership, the Indian team also recorded an impressive goalless draw against a far superior Qatar team in 2019.</p>
+<p>Gurpreet Singh Sandhu also holds the record for being the only Indian footballer to feature in a <a href="https://www.instagram.com/europaleague/" target="_blank" rel="noopener">UEFA Europa League</a> match when he played for the Norwegian side Stabaek in 2016.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Gurpreet Singh Sandhu)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="2">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">02</div>
+                <div class="title">Sandesh Jhingan</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 565 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg?tr=w-1000 1000w"
+                        alt="Sandesh Jhingan"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/06/30134823/25039405_1526544770763608_6313050223685926912_n-565x560.jpg" alt="Sandesh Jhingan"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>If you talk about the best Indian football players in 2023, you simply cannot make a list without mentioning <a href="https://www.augustman.com/in/sports/sandesh-jhingan-career-stats-and-net-worth/" target="_blank" rel="noopener">Sandesh Jhingan</a>. The Indian defender, who plays in the centre-back position, has been a wall in the backline of the Indian team for the past few years.</p>
+<p>Sandesh Jhingan came into the limelight following his performances in the inaugural edition of the ISL held in 2014. Playing for the <a href="https://www.augustman.com/in/people/kerala-blasters-fc-everything-you-need-to-know/" target="_blank" rel="noopener">Kerala Blasters</a>, a young Jhingan performed exceptionally well and carried his team to the final of the tournament. Even though the Kerala-based club lost the title to Atletico de Kolkata, Jhingan received high praise for his performances throughout the season and was also rewarded with the Emerging Player of the Season award.</p>
+<p>The defender has also led the Indian football team on a few occasions. Wearing the captain’s armband, Sandesh Jhingan led the Indian football team to a goalless draw against a formidable Chinese national football team in 2018. The result meant that India, for the first time in its footballing history, remained undefeated on Chinese soil.</p>
+<p>Jhingan was awarded the 2020-21 All India Football Federation Men’s Player of the Year Award. He also holds the record for being the only Indian footballer to play in Croatia when he signed a one-year deal with the Croatian First Football League club Sibenik.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Sandesh Jhingan)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="3">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">03</div>
+                <div class="title">Anwar Ali</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 482 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg?tr=w-1000 1000w"
+                        alt="Anwar Ali"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161123/288270990_985266855488591_5736509623475913482_n-482x560.jpg" alt="Anwar Ali"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>At the young age of 22, Anwar Ali has already become one of the key players in the present Indian football team. The child prodigy made his international debut under the current national team coach <a href="https://www.augustman.com/in/sports/igor-stimac-career-highlights-and-salary/" target="_blank" rel="noopener">Igor Stimac</a> in a friendly match against Belarus on March 23, 2023. Three months into his international career, Ali scored his first international goal on June 14 against Hong Kong in the 2023 AFC Asian Cup qualification.</p>
+<p>At the domestic level, Anwar Ali has played for seven different clubs so far. He featured in 30 matches in the ISL playing for FC Goa and has scored a solitary goal in India’s top-division tournament.</p>
+<p>Unfortunately, in 2019 Anwar Ali was diagnosed with a rare heart disease called Hypertrophic cardiomyopathy― a condition in which the heart muscle becomes abnormally thick, making it harder for the organ to pump blood. Due to his diagnosis, he was forbidden from playing football by the AIFF. However, Ali later got a verdict from the Delhi High Court which allowed him to play again.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Anwar ali)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="4">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">04</div>
+                <div class="title">Pritam Kotal</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 560 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg?tr=w-1000 1000w"
+                        alt="Pritam Kotal"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161642/328003869_891064548881444_2758350104959749438_n-560x560.jpg" alt="Pritam Kotal"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>Hailing from the suburbs of Kolkata, Pritam Kotal is a veteran defender in the Indian national team with years of experience at both domestic and international levels. He made his debut for the national team in 2015 under then-coach Stephen Constantine and since then, has never looked back. Kotal has won the SAFF Championship in 2016 and in 2023 and the Intercontinental Cup in 2018 with the Indian football team.</p>
+<p>In the domestic sphere, Pritam Kotal has been a regular face in the Mohun Bagan camp for nearly a decade. Even though he played for FC Pune City, Atletico de Kolkata and Delhi Dynamos in between, he has featured for the Kolkata-based club for a lion’s share of his career. Kotal helped the Mariners (Mohun Bagan&#8217;s popular nickname) lift their first I-League title in 2015. Kotal then participated in the 2016 ISL season for Atletico de Kolkata and helped them win their second (and his first!) ISL title. He repeated his heroics of 2016 with ATK in the 2019-20 season as the Kolkata-based outfit lifted their third ISL trophy.</p>
+<p>The merger of ATK with Mohun Bagan in 2020 meant that Pritam Kotal could once again be seen in the maroon-and-green jersey. The Bengali defender guided Mohun Bagan to their first ISL victory in March of 2023.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Pritam Kotal)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="5">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">05</div>
+                <div class="title">Rowllin Borges</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 560 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg?tr=w-1000 1000w"
+                        alt="Rowllin Borges"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04161934/194880340_572556990398723_769446567881211074_n-560x560.jpg" alt="Rowllin Borges"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>A midfielder who has been in the Indian national football team for a considerable amount of time, not many have heard of Rowllin Borges. The 31-year-old Goan footballer might not have a massive fan following, but he enjoys the luxury of harbouring both international and domestic trophies in his cabinet.</p>
+<p>Rowllin Borges made his international debut in 2015. Soon after, he won the SAFF Championship in 2016 with the <a href="https://www.instagram.com/indianfootball/" target="_blank" rel="noopener">Blue Tigers</a>. He clinched his second international trophy representing India at the 2018 Intercontinental Cup after the Indian team defeated Kenya in the final by a margin of 2-0.</p>
+<p>Borges won his first trophy at the domestic level with the Mumbai City FC as they finished the group stage of the 2020-21 ISL at the top of the table, winning the League Winners Shield. A few days later, he helped his team win the ISL crown for the first time.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Rowllin Borges)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="6">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">06</div>
+                <div class="title">Anirudh Thapa</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(538 / 640 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg?tr=w-1000 1000w"
+                        alt="Anirudh Thapa"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162404/357314351_813745093497492_474823055782209146_n.jpg" alt="Anirudh Thapa"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>Over the past few years, Anirudh Thapa has become a regular in the Indian national football team line-up. Making his international debut in 2017, Thapa has won two Tri-Nation Series (2017 and 2023), two Intercontinental Cup titles (2018 and 2023) and one SAFF Championship crown (2021). In six years of international football, the midfielder has made over 45 appearances and has four goals to his name.</p>
+<p>In the domestic sphere, Anirudh Thapa has been a common face in the Chennaiyin FC camp since 2016. In 2017-18, he helped the Chennai-based club lift their second ISL title. Thapa also led Chennaiyin FC in ISL 2021-22.</p>
+<p>The 25-year-old central midfielder has also won multiple awards with the Indian team. He has been the recipient of the AIFF Men’s Emerging Footballer of the Year award on two occasions, first in 2017-18 and then in 2019-20.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Anirudh Thapa)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="7">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">07</div>
+                <div class="title">Bipin Singh Thounaojam</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 560 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg?tr=w-1000 1000w"
+                        alt="Bipin Singh Thounaojam"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162646/311779498_1292134001600799_4410691300700774301_n-560x560.jpg" alt="Bipin Singh Thounaojam"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>Bipin Singh Thounaojam made his international debut for the Indian football team in 2021 against Oman. The 28-year-old plays as a winger for the national side and was instrumental in the Indian team’s Tri-Nation Series win in 2023.</p>
+<p>In the ISL, Bipin Singh Thounaojam has made 86 appearances and has found the back of the net 21 times. He was a part of the Mumbai City FC team which won the League Winners Shield and the ISL title in 2020-21.</p>
+<p>Even though he has played only seven matches for the Indian national team, Bipin Singh Thounaojam has shown promise of becoming a dependable member of the squad in the coming days.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Bipin Singh)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="8">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">08</div>
+                <div class="title">Udanta Singh Kumam</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(480 / 640 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg?tr=w-1000 1000w"
+                        alt="Udanta Singh Kumam"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04162827/353463950_783472526817471_343478477223436262_n.jpg" alt="Udanta Singh Kumam"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>In recent times, Udanta Singh Kumam has been a core member of the Indian football team’s attacking line. He made his international football debut in 2016 against Iran and since then, has donned the national team’s jersey 44 times. He also has two goals to his name whilst playing for India. Kumam has won three international trophies with the Indian side: the SAFF Championship in 2021, and the Intercontinental Cup in 2018 and 2023.</p>
+<p>For nearly a decade, Udanta Singh Kumam has been a regular member of the Bengaluru FC line-up. He has won several titles with the Bengaluru-based club, notable of which are the I-League title in 2015-16, the ISL in 2018-19 and the Durand Cup in 2022. He was also a part of the Bengaluru FC side that finished as runners-up in the 2016 AFC Cup. In 203 appearances for Bengaluru FC, he has scored 22 goals.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Udanta Kumam)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="9">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">09</div>
+                <div class="title">Lallianzuala Chhangte</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 448 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg?tr=w-1000 1000w"
+                        alt="Lallianzuala Chhangte"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/07/04163022/355400359_3393969477523466_1594237363342125802_n-448x560.jpg" alt="Lallianzuala Chhangte"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>Although he has been around for quite some time, it is only in the past couple of years that Lallianzuala Chhangte has found the form of his career. The 26-year-old attacking winger is one of the fastest Indian footballers to have ever played the game. In ISL 2017, Chhangte overtook <a href="https://www.augustman.com/in/people/messi-vs-ronaldo-who-is-the-goat/" target="_blank" rel="noopener">Lionel Messi and Cristiano Ronaldo</a> to clock a top speed of 35.8 kilometres per hour! Due to his impressive pace, he is also known as the ‘Mizo Flash’.</p>
+<p>Chhangte has played 26 matches for the Indian national team since making his debut in 2015 and has scored six goals in his international career. He won the SAFF Championship in 2015 and in 2023, as well as the Tri-Nation Series and the Intercontinental Cup in 2023.</p>
+<p>Lallianzuala Chhangte was conferred with the AIFF Men’s Player of the Year Award for 2022-23. He also won the ISL Hero of the League award in 2022-23 alongside the 2023 Tri-Nation Series Player of the Tournament award.</p>
+<p><em>(Picture Credits: Courtesy Instagram/@Lallianzuala Chhangte)</em></p>
+</div>
+        </div>
+    </div>
+</div>                            
+
+<div class="card listicle-item-card clearfix" id="10">
+    <div class="content">
+        <div class="content-upper">
+            <div class="information bs_mb-4">
+                                <div class="index">10</div>
+                <div class="title">Sunil Chhetri</div>
+
+                            </div>
+
+            <div class="bs_text-center listicle-image-wrapper">
+                                                            <div class="image-wrapper" style="padding-top:calc(560 / 560 * 100%);position:relative;height:100%;width:100%;margin:0">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg?tr=w-500 500w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg?tr=w-800 800w, https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg?tr=w-1000 1000w"
+                        alt="Sunil Chhetri"
+                        sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+
+                    <!-- <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/02/22210809/aa-560x560.jpg" alt="Sunil Chhetri"> -->
+                </div>
+                                        </div>
+
+            <div>
+                <div class="items">
+                                                                            </div>
+                                <!-- <a class="btn btn--arrow" href="" rel="nofollow">
+                        
+                    </a> -->
+
+                <!-- EXTRA BUTTONS -->
+                <!--<div class="my-affiliate-container btt_listicle-btn bs_row">                        
+                        <div class="my-affiliate bs_col-6 bs_mx-auto">
+                            <a class="btn btn--arrow"
+                                href="https://www.cultbeauty.co.uk/the-ordinary-vitamin-c-suspension-23-ha-spheres-2.html" rel=""
+                                target="_blank">
+                                Shop Here
+                            </a>
+                        </div> 
+                    </div>-->
+                
+                            </div>
+        </div>
+
+        <div class="inner-content clearfix">
+                        <div class="description "><p>To those of you who were on the verge of criticising us for missing out on this name― we always save the best for the last.</p>
+<p><a href="https://www.augustman.com/in/entertainment/culture/living/sunil-chhetri-net-worth-records-and-career-highlights/" target="_blank" rel="noopener">Sunil Chhetri</a> has become synonymous with Indian football, and the <em>magnifico</em> plays in a league of his own. The 38-year-old forward is arguably the greatest legend of Indian football. Chhetri’s popularity surpasses that of the entire Indian football team, with him being at the core of the resurgence of Indian football in recent times.</p>
+<p>Often referred to as &#8216;Captain Fantastic<em>&#8216;, </em>Sunil Chhetri was handed over the Indian national team’s captaincy in 2012, seven years after his debut in international football. Since then, he has led India to multiple tournament victories.</p>
+<p>At the Indian domestic circuit, Chhetri has been a regular in the Bengaluru FC line-up for the past decade, helping them win the I-League title in 2013-14 and 2015-16, and leading them to an ISL title win in 2018-19. In his illustrious career, Chhetri has also played five matches for Portuguese side Sporting CP. He is one of the five Indian players to have played football in Europe.</p>
+<p>Sunil Chhetri, apart from being the highest goal scorer for India, is also the third-highest goal scorer among active footballers in international football with 92 goals. Chhetri trails modern-day legends <a href="https://www.augustman.com/in/entertainment/culture/living/cristiano-ronaldo-net-worth-and-expensive-purchases/" target="_blank" rel="noopener">Cristiano Ronaldo</a> (123 goals) and <a href="https://www.augustman.com/in/entertainment/culture/living/lionel-messi-net-worth-endorsements-expensive-things-he-owns/" target="_blank" rel="noopener">Lionel Messi</a> (103 goals) on the list and stands fourth overall in the history of football.</p>
+<p>Chhetri has won numerous accolades for his performances over the years, the most prestigious of them being the Khel Ratna Award by the Indian government. He was presented with India’s highest sporting honour in 2021. He also received the Padma Shri, India’s fourth-highest civilian award, in 2019.</p>
+</div>
+        </div>
+    </div>
+</div>                    </div>
+        <div class="paragraph answer"><p><em>(Main Image Credits: Courtesy Instagram/@Sunil Chhetri and Instagram/@Gurpreet Singh Sandhu)</em></p>
+<p><em>(Featured Image Credits: Courtesy Instagram/@Sunil Chhetri)</em></p>
+</div> 
+    
+    
+    
+    
+    
+    
+                        <div class="schema-faq wp-block-yoast-faq-block">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+                        <div class="schema-faq-section" id="faq-question-1">
+            <strong class="schema-faq-question">Question: Which Indian football player has participated in the FIFA World cup?</strong>
+            <p class="schema-faq-answer"><strong>Answer:</strong> India never participated in the FIFA World Cup. However, Vikash Dhorasoo, a player of Indian origin, has played at the World Cup. He made a couple of appearances for France in 2006 when they reached the final.
+                        </p>
+        </div>
+                                                <div class="schema-faq-section" id="faq-question-2">
+            <strong class="schema-faq-question">Question: Who is the best Indian origin football player?</strong>
+            <p class="schema-faq-answer"><strong>Answer:</strong> Danny Batth, the Stoke City defender, is currently the highest valued Indian origin player in the world.
+                        </p>
+        </div>
+                                    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{"type":"Question","name":"Which Indian football player has participated in the FIFA World cup?","acceptedAnswer":{"@type":"Answer","text":"India never participated in the FIFA World Cup. However, Vikash Dhorasoo, a player of Indian origin, has played at the World Cup. He made a couple of appearances for France in 2006 when they reached the final."}},{"type":"Question","name":"Who is the best Indian origin football player?","acceptedAnswer":{"@type":"Answer","text":"Danny Batth, the Stoke City defender, is currently the highest valued Indian origin player in the world."}}]
+    }
+    </script>
+        
+            <div class="inner-content-wrapper">
+            <div class="tags">
+                                    <a href="https://www.augustman.com/in/tag/football/" class="tag btn" target="_blank">Football</a>
+                                    <a href="https://www.augustman.com/in/tag/football-players/" class="tag btn" target="_blank">Football Players</a>
+                                    <a href="https://www.augustman.com/in/tag/footballers/" class="tag btn" target="_blank">Footballers</a>
+                                    <a href="https://www.augustman.com/in/tag/gurpreet-singh-sandhu/" class="tag btn" target="_blank">gurpreet singh sandhu</a>
+                                    <a href="https://www.augustman.com/in/tag/indian-football-team/" class="tag btn" target="_blank">Indian Football Team</a>
+                                    <a href="https://www.augustman.com/in/tag/sandesh-jhingan/" class="tag btn" target="_blank">sandesh jhingan</a>
+                                    <a href="https://www.augustman.com/in/tag/sports/" class="tag btn" target="_blank">Sports</a>
+                                    <a href="https://www.augustman.com/in/tag/sunil-chhetri/" class="tag btn" target="_blank">Sunil Chhetri</a>
+                            </div>
+        </div>
+    
+</div>
+
+                  
+
+ 
+
+
+
+<div class="inner-content-wrapper">
+    <div class="author-metabox ">
+        <div class="author-metabox-upper-wrapper clearfix">
+            <div class="title-lg title-lg--line">
+                written by.
+            </div>
+            <div class="author-metabox_info">
+                            <a href="https://www.augustman.com/in/author/uddipta/" target="_blank">
+                            
+                                    <h2 class="a-name">Uddipta Banerjee</h2>
+                                    
+                                </a>
+                                                <div class="author-title">Senior Digital Writer, Sports and Watches </div>
+                                                <div class="author-bio">Uddipta writes about sports and watches besides occasionally venturing into the world of automobiles and technology. He was associated with the Indian Express in the capacity of a sub-editor at their Lifestyle desk. A journalism and mass communication student from Xavier Institute of Communications, Mumbai, Uddipta devotes most of his leisure time to photography and filmmaking. He has contributed photographs to Vogue Italia and several exhibits, and has directed award-winning short films screened at film festivals in India and abroad.</div>
+                                
+                <!-- SOCIAL MEDIA -->
+                <div class="author-social-list">
+                                        
+                                        <a href="https://www.instagram.com/uddipta.banerjee/?igshid=ZDc4ODBmNjlmNQ" target="_blank" aria-label="instagram">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M10.0039 5.50781C7.51953 5.50781 5.51562 7.51172 5.51562 9.99609C5.51562 12.4805 7.51953 14.4844 10.0039 14.4844C12.4883 14.4844 14.4922 12.4805 14.4922 9.99609C14.4922 7.51172 12.4883 5.50781 10.0039 5.50781ZM10.0039 12.9141C8.39844 12.9141 7.08594 11.6055 7.08594 9.99609C7.08594 8.38672 8.39453 7.07812 10.0039 7.07812C11.6133 7.07812 12.9219 8.38672 12.9219 9.99609C12.9219 11.6055 11.6094 12.9141 10.0039 12.9141V12.9141ZM15.7227 5.32422C15.7227 5.90625 15.2539 6.37109 14.6758 6.37109C14.0938 6.37109 13.6289 5.90234 13.6289 5.32422C13.6289 4.74609 14.0977 4.27734 14.6758 4.27734C15.2539 4.27734 15.7227 4.74609 15.7227 5.32422ZM18.6953 6.38672C18.6289 4.98438 18.3086 3.74219 17.2813 2.71875C16.2578 1.69531 15.0156 1.375 13.6133 1.30469C12.168 1.22266 7.83594 1.22266 6.39063 1.30469C4.99219 1.37109 3.75 1.69141 2.72266 2.71484C1.69531 3.73828 1.37891 4.98047 1.30859 6.38281C1.22656 7.82812 1.22656 12.1602 1.30859 13.6055C1.375 15.0078 1.69531 16.25 2.72266 17.2734C3.75 18.2969 4.98828 18.6172 6.39063 18.6875C7.83594 18.7695 12.168 18.7695 13.6133 18.6875C15.0156 18.6211 16.2578 18.3008 17.2813 17.2734C18.3047 16.25 18.625 15.0078 18.6953 13.6055C18.7773 12.1602 18.7773 7.83203 18.6953 6.38672V6.38672ZM16.8281 15.1562C16.5234 15.9219 15.9336 16.5117 15.1641 16.8203C14.0117 17.2773 11.2773 17.1719 10.0039 17.1719C8.73047 17.1719 5.99219 17.2734 4.84375 16.8203C4.07812 16.5156 3.48828 15.9258 3.17969 15.1562C2.72266 14.0039 2.82813 11.2695 2.82813 9.99609C2.82813 8.72266 2.72656 5.98437 3.17969 4.83594C3.48438 4.07031 4.07422 3.48047 4.84375 3.17187C5.99609 2.71484 8.73047 2.82031 10.0039 2.82031C11.2773 2.82031 14.0156 2.71875 15.1641 3.17187C15.9297 3.47656 16.5195 4.06641 16.8281 4.83594C17.2852 5.98828 17.1797 8.72266 17.1797 9.99609C17.1797 11.2695 17.2852 14.0078 16.8281 15.1562Z"
+                            fill="#121212"
+                            ></path>
+                        </svg>
+                    </a>
+                    &nbsp;
+                                        
+                                        
+                                        
+                                    </div>
+                
+               
+            </div>
+                                    <a href="https://www.augustman.com/in/author/uddipta/" target="_blank" class="author-metabox_image-block">
+                                <!-- <div class="" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg)"></div> -->
+                <div class=" author-image-wrapper">
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2023/09/15112151/WhatsApp-Image-2023-07-06-at-16.55.26-1.jpg?tr=w-800 800w" alt="The Top 10 Indian Football Players Of 2023" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">
+                </div>
+                            </a>
+                                </div>
+    </div>
+</div>
+              </div>
+                                <div class="secondary">
+                    <div>
+                      <div class="secondary-inner desktop-sticky-section">
+                                                    <div class="augus-sidebar-placement-1" id="augus-908893297"><!-- Sync AdSlot 2 for Ad unit 'Medium_Rectangle' ### Size: ['fluid',[300,600],[300,250],[300,1200],[300,460]] -->
+<div id='div-gpt-ad-4773716-2' style="width:100%">
+
+<!--
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-2'); }); 
+  </script> -->
+	
+	<!-- <script>
+window.browsitag.cmd.push(() => {
+window.browsitag.display("div-gpt-ad-4773716-2", {
+sizes: [{}],
+adUnit: "/1021996/Medium_Rectangle",
+disableViewabilityOptimization: false ,
+positionTag: 'in-content',
+
+});
+});
+</script> -->
+	
+	
+</div>
+<!-- End AdSlot 2 -->
+</div>
+                          
+                                                    <div id="outbrain-holder-mobile" class="bl-outbrain bs_mt-5"></div>
+    <div class="short-reads desktop-sticky-section">
+        <div class="headline-wrapper  ">
+    <h2 class="headline">Most popular</h2>
+</div>        <div class="articles">
+                                            
+    
+<article class="post-161603 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/india-olympics-2024-athletes-likely-to-win-medals-neeraj-chopra-vinesh-phogat/">
+                <div class="title">India At Paris Olympics 2024: Which Athletes Are Likely To Win Medals And Wave The Tricolour High?</div>
+                                
+                                    <div class="posted-on"><time>21 mins ago | 12 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/india-olympics-2024-athletes-likely-to-win-medals-neeraj-chopra-vinesh-phogat/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04154018/421606548_18379489270079637_2874663324626393649_n-1-500x500.jpg?tr=w-800 800w" alt="India At Paris Olympics 2024: Which Athletes Are Likely To Win Medals And Wave The Tricolour High?"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                                            
+    
+<article class="post-161878 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/canada-open-2024-badminton-prize-money/">
+                <div class="title">A Complete Breakdown Of The Canada Open 2024 (Badminton) Prize Money Pool</div>
+                                
+                                    <div class="posted-on"><time>20 hours ago | 4 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/canada-open-2024-badminton-prize-money/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/05185535/hendra-setiawan_ino24-980x550-1-500x500.jpeg?tr=w-800 800w" alt="A Complete Breakdown Of The Canada Open 2024 (Badminton) Prize Money Pool"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                                            
+    
+<article class="post-161498 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/wimbledon-2024-top-seeds-jannik-sinner-iga-swiatek/">
+                <div class="title">Wimbledon 2024 Top Seeds: Which Players Are Most Likely To Win The Coveted Tennis Title?</div>
+                                
+                                    <div class="posted-on"><time>2 days ago | 5 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/wimbledon-2024-top-seeds-jannik-sinner-iga-swiatek/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/03134546/b_20240701_474_alcaraz_sb2_6949-341176-1-500x500.jpeg?tr=w-800 800w" alt="Wimbledon 2024 Top Seeds: Which Players Are Most Likely To Win The Coveted Tennis Title?"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                    <div class="btn-view-all-articles btn-border-dark btn">View all Articles</div>
+                                                            
+    
+<article class="post-161611 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/british-grand-prix-2024-schedule-venue-livestream-concert-details/">
+                <div class="title">A Close Look At The British Grand Prix 2024 Schedule, Venue And More</div>
+                                
+                                    <div class="posted-on"><time>3 days ago | 5 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/british-grand-prix-2024-schedule-venue-livestream-concert-details/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/04114549/1528149314-1-500x500.jpeg?tr=w-800 800w" alt="A Close Look At The British Grand Prix 2024 Schedule, Venue And More"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                                            
+    
+<article class="post-159126 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/coco-gauff-net-worth-salary-career-earnings-cars/">
+                <div class="title">Coco Gauff&#8217;s Net Worth: Looking At The American Tennis Prodigy&#8217;s Earnings, Luxury Assets And More</div>
+                                
+                                    <div class="posted-on"><time>5 days ago | 8 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/coco-gauff-net-worth-salary-career-earnings-cars/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/12103601/376263519_836406767861422_7628670611666520455_n-1-500x500.jpeg?tr=w-800 800w" alt="Coco Gauff&#8217;s Net Worth: Looking At The American Tennis Prodigy&#8217;s Earnings, Luxury Assets And More"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                                            
+    
+<article class="post-161227 card short-read-card">
+    <div class="short-read-card-info-wrapper">
+        <div class="information">
+                <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/" title="Sports">    
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+                <a href="https://www.augustman.com/in/sports/team-india-t20-squad-in-2025-likely-players/">
+                <div class="title">Team India T20 Squad In 2025: What Will The New Side Look Like Without Its Three Legends?</div>
+                                
+                                    <div class="posted-on"><time>6 days ago | 8 min read</time></div>
+                            </a>
+        </div>
+        <!-- <div class="image lazybg" data-lazybg="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg"></div> -->
+        <div>
+            <a href="https://www.augustman.com/in/sports/team-india-t20-squad-in-2025-likely-players/" aria-label="PostLink"></a>
+                <div class="image">            
+                    <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" class="post-res-img" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg"
+                            data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/07/01154049/449519240_979356320316148_4680453496523126352_n-1-500x500.jpg?tr=w-800 800w" alt="Team India T20 Squad In 2025: What Will The New Side Look Like Without Its Three Legends?"
+                            sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px" loading="lazy">            
+                </div>
+            </a>
+        </div>
+    </div>
+</article>                                    </div>
+    </div>
+                                                </div> 
+                    </div>
+                  </div>
+                          </div>
+        </div>
+
+        <div class="entry-footer">
+		<div class="bl-outbrain large-container bs_mt-3" id="outbrain-holder-desktop"></div>
+
+            	<div class="related-post-wrapper">
+    <div class="related-posts large-container">
+        <div class="label title-lg title-lg--line">You May Also Like.</div>
+        <div class="rps-list row">
+                                                                                                
+
+
+
+    
+ 
+
+    
+
+<article class="post-161070 card normal-card col-4 ">    
+        <span class="ncard-category-link">
+                            <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/us-open-2024-badminton-prize-money/" title="Sports">
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+            </span>
+        
+        <a href="https://www.augustman.com/in/sports/us-open-2024-badminton-prize-money/" target=""  class="ymal">
+            <div class="normal-card-img-wrapper image">
+                <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg?tr=w-800 800w" alt="US Open 2024 (Badminton) Prize Money: How Much Cash Reward Will The Winners Pocket?" title="US Open 2024 (Badminton) Prize Money: How Much Cash Reward Will The Winners Pocket?" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+            </div>
+
+        </a>
+            <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2024/06/28134534/cr_20240614_1229_australianopen2024_bppf8990-980x550-1.jpeg)"> -->
+            <div class="normal-card-desc-wrapper">
+                                <a href="https://www.augustman.com/in/sports/us-open-2024-badminton-prize-money/" target=""  class="ymal" title="US Open 2024 (Badminton) Prize Money: How Much Cash Reward Will The Winners Pocket?">
+                    <h2 class="title">US Open 2024 (Badminton) Prize Money: How Much Cash Reward Will The Winners Pocket?</h2>
+                </a>
+                <div class="post-date">
+                                                                                    <p class="date">By: Uddipta Banerjee | Jun 30, 2024   <span class="read_time_pipe"> |  </span> <span  class="read_time_label">4 min read </span>  </p>
+                </div>
+            </div>
+        </a>
+</article>
+                                            
+
+
+
+    
+ 
+
+    
+
+<article class="post-161022 card normal-card col-4 ">    
+        <span class="ncard-category-link">
+                            <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/icc-mens-t20-world-cup-2024-prize-money/" title="Sports">
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+            </span>
+        
+        <a href="https://www.augustman.com/in/sports/icc-mens-t20-world-cup-2024-prize-money/" target=""  class="ymal">
+            <div class="normal-card-img-wrapper image">
+                <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg?tr=w-800 800w" alt="ICC Men&amp;#8217;s T20 World Cup 2024 Prize Money: How Much Did Team India Take Home This Year?" title="ICC Men&amp;#8217;s T20 World Cup 2024 Prize Money: How Much Did Team India Take Home This Year?" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+            </div>
+
+        </a>
+            <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2024/06/01111029/qrqpri2pv0xufnjulyzk.jpg)"> -->
+            <div class="normal-card-desc-wrapper">
+                                <a href="https://www.augustman.com/in/sports/icc-mens-t20-world-cup-2024-prize-money/" target=""  class="ymal" title="ICC Men&amp;#8217;s T20 World Cup 2024 Prize Money: How Much Did Team India Take Home This Year?">
+                    <h2 class="title">ICC Men&#8217;s T20 World Cup 2024 Prize Money: How Much Did Team India Take Home This Year?</h2>
+                </a>
+                <div class="post-date">
+                                                                                    <p class="date">By: Uddipta Banerjee | Jul 01, 2024   <span class="read_time_pipe"> |  </span> <span  class="read_time_label">8 min read </span>  </p>
+                </div>
+            </div>
+        </a>
+</article>
+                                            
+
+
+
+    
+ 
+
+    
+
+<article class="post-160416 card normal-card col-4 ">    
+        <span class="ncard-category-link">
+                            <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/uefa-euro-2024-live-stream-schedule-and-more/" title="Sports">
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+            </span>
+        
+        <a href="https://www.augustman.com/in/sports/uefa-euro-2024-live-stream-schedule-and-more/" target=""  class="ymal">
+            <div class="normal-card-img-wrapper image">
+                <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg?tr=w-800 800w" alt="UEFA Euro 2024 Live Stream: How To Watch The European Football Tournament In India" title="UEFA Euro 2024 Live Stream: How To Watch The European Football Tournament In India" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+            </div>
+
+        </a>
+            <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2024/06/24190542/spain_v_italy_group_b_-_uefa_euro_2024-1.jpeg)"> -->
+            <div class="normal-card-desc-wrapper">
+                                <a href="https://www.augustman.com/in/sports/uefa-euro-2024-live-stream-schedule-and-more/" target=""  class="ymal" title="UEFA Euro 2024 Live Stream: How To Watch The European Football Tournament In India">
+                    <h2 class="title">UEFA Euro 2024 Live Stream: How To Watch The European Football Tournament In India</h2>
+                </a>
+                <div class="post-date">
+                                                                                    <p class="date">By: Uddipta Banerjee | Jun 29, 2024   <span class="read_time_pipe"> |  </span> <span  class="read_time_label">6 min read </span>  </p>
+                </div>
+            </div>
+        </a>
+</article>
+                                            
+
+
+
+    
+ 
+
+    
+
+<article class="post-160624 card normal-card col-4 ">    
+        <span class="ncard-category-link">
+                            <div class="categories">
+                                                                                                    <a href="https://www.augustman.com/in/sports/austrian-grand-prix-2024-schedule-venue-livestream/" title="Sports">
+                                            <span class="category">Sports</span>
+                    </a>
+                                </div>
+            </span>
+        
+        <a href="https://www.augustman.com/in/sports/austrian-grand-prix-2024-schedule-venue-livestream/" target=""  class="ymal">
+            <div class="normal-card-img-wrapper image">
+                <img src="https://images.augustman.com/wp-content/uploads/sites/2/2022/04/07163748/am-placeholder-img.png?tr=q-60" data-src="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg" data-srcset="https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg?tr=w-300 300w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg?tr=w-400 400w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg?tr=w-600 600w, https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg?tr=w-800 800w" alt="Austrian Grand Prix 2024 Schedule: When And Where Can You Watch The Next F1 Race In India?" title="Austrian Grand Prix 2024 Schedule: When And Where Can You Watch The Next F1 Race In India?" sizes="(max-width: 400px) 100vw, (max-width: 650px) 75vw, (max-width: 900px) 40vw, 1000px">
+            </div>
+
+        </a>
+            <!-- <div class="image" style="background-image:url(https://images.augustman.com/wp-content/uploads/sites/6/2024/06/26111541/2158582292-1.jpeg)"> -->
+            <div class="normal-card-desc-wrapper">
+                                <a href="https://www.augustman.com/in/sports/austrian-grand-prix-2024-schedule-venue-livestream/" target=""  class="ymal" title="Austrian Grand Prix 2024 Schedule: When And Where Can You Watch The Next F1 Race In India?">
+                    <h2 class="title">Austrian Grand Prix 2024 Schedule: When And Where Can You Watch The Next F1 Race In India?</h2>
+                </a>
+                <div class="post-date">
+                                                                                    <p class="date">By: Uddipta Banerjee | Jun 27, 2024   <span class="read_time_pipe"> |  </span> <span  class="read_time_label">5 min read </span>  </p>
+                </div>
+            </div>
+        </a>
+</article>
+                                                        </div>
+    </div>
+</div>
+
+		<script type="text/javascript">
+      			 window.addEventListener('load', function () {
+              			setOutbrainBottomWidget();
+       			 });
+		</script>
+        </div>
+
+        <div class="row">
+                        <div class="augus-archive-placement" id="augus-507408477"><!-- Sync AdSlot 1 for Ad unit 'Masthead' ### Size: ['fluid',[1140,300],[970,250]] -->
+<div id='div-gpt-ad-4773716-1_1' style="width:100%">
+<!--
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-1_1'); });
+  </script>
+
+-->
+
+	<script>
+window.browsitag.cmd.push(() => {
+window.browsitag.display("div-gpt-ad-4773716-1_1", {
+sizes: [{}],
+adUnit: "/1021996/Masthead",
+disableViewabilityOptimization: false ,
+positionTag: 'in-content',
+
+});
+});
+</script>
+	
+</div>
+<!-- End AdSlot 1 --></div>
+        </div>
+    </article>
+
+</main>
+
+
+    </div><!-- #content -->
+
+<!-- MOBILE ADHESIVE AD -->
+<div class="augus-adhesive-mobile-banner" id="augus-1591023810"><div class="mobile-sticky-ad" id="burda-1967035544">
+    <div class="mobile-sticky-ad-content">
+        <button class="btn-close-sticky-ad">&times;</button>
+        <div id='div-gpt-ad-1620191194227-0' style='margin: 0 auto;'>
+            <script>
+                googletag.cmd.push(function () {
+                    googletag.display('div-gpt-ad-1620191194227-0');
+                });
+            </script>
+        </div>
+    </div>
+</div></div>
+
+<div class="site-pre-footer">
+    <div class="pre-footer_instagram">
+        <div class="pre-footer_instagram-info small-container btn btn--dark">
+            <div class="text">
+                                <a href="https://www.instagram.com/augustmanindia/" target="_blank">
+                    Follow us @Augustmanindia
+
+                </a>
+                            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-footer-inner">
+        <div class="footer__top">
+            
+            
+    
+
+<div class=" subscription subscription__footer lazybg" data-lazybg="">
+    <div class="wrapper">
+                    <div class="headline-wrapper">
+                <div class="headline">Subscribe to the AugustMan newsletter. Never miss the latest in men's fashion and lifestyle again.</div>
+            </div>
+            <form id="subscription-form__footer" class="subscription-form">
+                <div class="field-wrapper">
+                    <input class="email" placeholder="Enter email address" required>
+                    <div class="markup"><p><span class="s1">Yes, I agree to the <a href="https://www.augustman.com/sg/privacy/" target="_blank" rel="noopener"><span style="text-decoration: underline;">Privacy Policy</span></a></span></p>
+</div>
+                </div>
+                <div class="btn btn-sign-up">Subscribe Now</div>
+                <div class="callback"></div>
+            </form>
+            </div>
+</div>
+        </div>
+        <div class="footer__middle">
+            <div class="footer-menu_subsite">
+                <ul class="footer-subsite-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_footer_subsite_menu menu-item-86022">
+                        <a href="/sg/" target="_blank">Singapore</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_footer_subsite_menu menu-item-86023">
+                        <a href="/my/" target="_blank">Malaysia</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_footer_subsite_menu menu-item-91110">
+                        <a href="/th/" target="_blank">Thailand</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_footer_subsite_menu menu-item-92663">
+                        <a href="/hk/" target="_blank">Hong Kong</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_footer_subsite_menu menu-item-87895">
+                        <a href="/in/" target="_blank">India</a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="footer-menu_menu">
+                <ul class="footer-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page btt_footer_menu menu-item-102326">
+                        <a href="https://www.augustman.com/in/about/" target="_blank">About</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page btt_footer_menu menu-item-85977">
+                        <a href="https://www.augustman.com/in/privacy/" target="_blank">Privacy Policy</a>
+                    </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page btt_footer_menu menu-item-85976">
+                        <a href="https://www.augustman.com/in/terms-conditions/" target="_blank">Terms &amp; Conditions</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer-site-legal">
+                <span class="site-copyright">&copy; 2024 Copyright Augustman </span>
+                
+                <span class="site-design">site by <a href="https://www.burdaluxury.com/" rel="designer" target="_blank">Burdaluxury</a></span>
+            </div>
+            <div class="site-pre-header">
+                <div class="large-container">
+                    <div class="brand-list-wrapper">
+                        <div class="brand-list-switcher">Our brands</div>
+                        <ul class="brand-list pre-header-menu">
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85959 first-brandlist-item">
+                                <a href="https://www.burdaluxury.com/" target="_blank">BurdaLuxury</a>
+                            </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85960">
+                                <a href="https://www.lifestyleasia.com/" target="_blank">Lifestyle Asia</a>
+                            </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85961">
+                                <a href="https://www.prestigeonline.com" target="_blank">Prestige</a>
+                            </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85962">
+                                <a href="https://burda.asia/augment/" target="_blank">Augment</a>
+                            </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85963">
+                                <a href="https://burda.asia/brands/" target="_blank">MVMT</a>
+                            </li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom btt_pre_header_menu menu-item-85964">
+                                <a href="https://burda.asia/brands/" target="_blank">Adore</a>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <div class="social-media">
+            <a href="https://twitter.com/augustman/" target="_blank" rel="nofollow noopener" class="social-media_icon twitter" aria-label="twitter"></a>
+                <a href="https://www.facebook.com/augustman/" target="_blank" rel="nofollow noopener" class="social-media_icon facebook" aria-label="facebook"></a>
+                <a href="https://www.instagram.com/augustmanindia/" target="_blank" rel="nofollow noopener" class="social-media_icon instagram" aria-label="instagram"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+                    <style>
+                        .btt_modal_content {
+                            background-color: #fefefe;
+                            margin: 15% auto;
+                            padding: 20px 40px;
+                            border: 1px solid #888;
+                            width: 35%;
+                        }
+                        
+                        .btt_modal {
+                            display: none; 
+                            position: fixed;
+                            z-index: 1111;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            /* overflow: auto; */
+                            overflow: hidden;
+                            background-color: rgb(0, 0, 0);
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
+                        
+                        .btt-close {
+                            color: #aaa;
+                            float: right;
+                            font-size: 28px;
+                            font-weight: bold;
+                        }
+                        
+                        .btt-close:hover,
+                        .btt-close:focus {
+                            color: black;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        
+                        .btt_text-center {
+                            text-align: center;
+                        }
+                        
+                        .btt_title {
+                            margin-bottom: 0px;
+                            line-height: 49px;
+                            margin-top: 1rem;
+                            margin-bottom: 0rem;
+                            background: #ffffff;
+                            color: var(--primary);
+                            text-align: center;
+                        }
+                        
+                        .btt_sub-title {
+                            font-weight: 400;
+                            color: #000000;
+                            text-transform: none;
+                            line-height: 1;
+                            margin-top: 0rem;
+                            margin-bottom: 2rem;
+                            text-align: center;
+                        }
+                        
+                        .btt_newsletter-wrap [type="email"] {
+                            padding: 15px 10px;
+                            border: 2px solid #000;
+                            box-shadow: none;
+                            font-size: 18px;
+                            color: #000;
+                            width: 95%;
+                            margin: 0px;
+                        }
+                        
+                        .btt_button {
+                            padding: 15px 30px;
+                            cursor: pointer;
+                            font-size: 18px;
+                            color: #ffffff;
+                            width: 100%;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: #999999;
+                        }
+                        
+                        .btt_button:active,
+                        .btt_button:focus,
+                        .btt_button:hover {
+                            background-color: #000;
+                        }
+                        
+                        .btt_checkbox {
+                            margin: 1rem 0rem 1.5rem 0rem;
+                        }
+                        
+                        .btt_checkbox [type="checkbox"] {
+                            width: auto;
+                            display: inline;
+                        }
+                        
+                        .btt_checkbox label {
+                            cursor: pointer;
+                            user-select: none;
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+                        
+                        @media(max-width: 767px) {
+                            .btt_modal_content {
+                                background-color: #fefefe;
+                                margin: 15% auto;
+                                padding: 20px 20px;
+                                border: 1px solid #888;
+                                width: 80%;
+                                /* Could be more or less, depending on screen size */
+                            }
+                            .btt_sub-title {
+                                font-size: 14px;
+                            }
+                            .btt_newsletter-wrap [type="email"] {
+                                padding: 10px 10px;
+                                font-size: 14px;
+                            }
+                            .btt_button {
+                                padding: 10px 30px;
+                            }
+                        }
+                        
+                        @media(min-width: 1200px) {
+                            .btt_modal_content {
+                                background-color: #fefefe;
+                                margin: 15% auto;
+                                padding: 20px 20px;
+                                border: 1px solid #888;
+                                width: 60%;
+                                /* Could be more or less, depending on screen size */
+                            }
+                        }
+                        
+                        @media(min-width: 1366px) {
+                            .btt_modal_content {
+                                background-color: #fefefe;
+                                margin: 15% auto;
+                                padding: 20px 20px;
+                                border: 1px solid #888;
+                                width: 50%;
+                                /* Could be more or less, depending on screen size */
+                            }
+                        }
+                        
+                        @media(min-width: 1400px) {
+                            .btt_modal_content {
+                                background-color: #fefefe;
+                                margin: 15% auto;
+                                padding: 20px 20px;
+                                border: 1px solid #888;
+                                width: 35%;
+                                /* Could be more or less, depending on screen size */
+                            }
+                        }
+                    </style>
+                    
+                    <style>
+                        
+                    </style>
+                    <script>
+                        // Set a Cookie
+                        function readCookie(name) {
+                            return (name = new RegExp('(?:^|;\\s*)' + ('' + name).replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '=([^;]*)').exec(document.cookie)) && name[1];
+                        }
+                        
+                        function setCookie(cName, cValue, expDays) {
+                            var base_url = "https://www.augustman.com/in";
+                            var url_array = base_url.split('/');
+                            var region_key = (url_array.length > 3) ? url_array[url_array.length - 1] : "";
+                            var cookie_name = cName + region_key;
+                            let date = new Date();
+                            date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+                            const expires = "expires=" + date.toUTCString();
+                            document.cookie = cookie_name + "=" + cValue + "; " + expires + "; path=/";
+                        }
+                        
+                        function getCookie(name) {
+                            var dc = document.cookie;
+                            var prefix = name + "=";
+                            var begin = dc.indexOf("; " + prefix);
+                            if (begin == -1) {
+                                begin = dc.indexOf(prefix);
+                                if (begin != 0) return null;
+                            } else {
+                                begin += 2;
+                                var end = document.cookie.indexOf(";", begin);
+                                if (end == -1) {
+                                    end = dc.length;
+                                }
+                            }
+                            // because unescape has been deprecated, replaced with decodeURI
+                            //return unescape(dc.substring(begin + prefix.length, end));
+                            return decodeURI(dc.substring(begin + prefix.length, end));
+                        }
+                    </script>
+		                        
+                        <script>
+                            // console.log(region_key);
+                            function btt_custom_modal_close(id, duration) {
+                                let username = 'btt_modal' + id;
+                                // Apply setCookie
+                                setCookie(username, username, duration);
+                                document.getElementById("myModal-" + id).style.display = "none";
+                                setCookie("btt_modal_click" + id, "", -1);
+                            }
+                            
+                            function validateEmail($email) {
+                                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                                return emailReg.test($email);
+                            }
+                            
+                            function btt_submit_subscription(e, id) {
+                                e.preventDefault();
+                                // alert(jQuery("#btt_modal_subscription_email").val());
+                                // jQuery.post("btt_modal_subscription")
+                                var email = jQuery("#btt_modal_subscription_email_" + id).val();
+                                if (email == "") {
+                                    jQuery("#btt_message_error").html("Email cannot be emplty");
+                                    jQuery("#btt_message_error").show();
+                                } else if (!validateEmail(email)) {
+                                    jQuery("#btt_message_error").html("Please enter valid email id.");
+                                    jQuery("#btt_message_error").show();
+                                } else if (!jQuery('input[name=btt_terms_radio_' + id + ']').is(':checked')) {
+                                    jQuery("#btt_message_error").html("Please check the privacy policy check box");
+                                    jQuery("#btt_message_error").show();
+                                } else {
+                                    var base_uri1 = 'https://www.augustman.com/in';
+                                    jQuery.ajax({
+                                        url: base_uri1 + "/wp-json/btt_custom_modal/v1/btt_modal_subscription",
+                                        type: 'POST',
+                                        dataType: 'json',
+                                        data: {
+                                            btt_modal_id: jQuery("#btt_custom_modal_id_" + id).val(),
+                                            btt_subscription_email: jQuery("#btt_modal_subscription_email_" + id).val()
+                                        },
+                                        success: function(response) {
+                                            // alert(response.error);
+                                            if (response.status == true) {
+                                                jQuery("#btt_message_error").hide();
+                                                jQuery("#btt_message_success").show();
+                                                var duration = response.disable_duration;
+                                                setTimeout(() => {
+                                                    btt_custom_modal_close(id, duration)
+                                                }, 3000);
+                                            } else {
+                                                jQuery("#btt_message_error").html("Unable to subscribe");
+                                                jQuery("#btt_message_error").show();
+                                            }
+                                        }
+                                    });
+                                }
+                                return false;
+                            }
+                            
+                            jQuery(document).ready(function() {
+                                
+                            });
+                        </script>
+                            <style>
+        .btt_image_cloned{
+            max-width:100%;
+            height:auto;
+        }
+    </style>
+    <script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/sticky/sticky.compile.js?ver=5.8.4' defer='defer' id='sticky-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/clamp/clamp.js?ver=5.8.4' defer='defer' id='clamp-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/slick/slick.min.js?ver=5.8.4' defer='defer' id='slick-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/zoom/jquery.zoom.min.js?ver=5.8.4' defer='defer' id='zoom-js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js?ver=5.8.4' defer='defer' id='matchHeight-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/selectize/selectize.min.js?ver=5.8.4' defer='defer' id='selectize-js-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/yoastAccordian/yoast-faq.js?ver=5.8.4' defer='defer' id='yoast-js-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/intersection-observer.js?ver=5.8.4' defer='defer' id='intersection-observer-js-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js-plugins/adsCode/ads.js?ver=5.8.4' defer='defer' id='ads-js-js'></script>
+<script type='text/javascript' id='rushhour-minified-scripts-js-extra'>
+/* <![CDATA[ */
+var wpJS = {"ajaxURL":"https:\/\/www.augustman.com\/in\/wp-admin\/admin-ajax.php","themeURL":"https:\/\/www.augustman.com\/in\/wp-content\/themes\/augustman-2021","string":{"subscription":{"success":"Successfully subscribed","agree":"Please agree to our Privacy Policy"}},"currentSite":"IN"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-content/themes/augustman-2021/js/build/main.js?ver=1718283693' defer='defer' id='rushhour-minified-scripts-js'></script>
+<script type='text/javascript' src='https://www.augustman.com/in/wp-includes/js/wp-embed.min.js?ver=5.8.4' defer='defer' id='wp-embed-js'></script>
+<div class="augus-after-body-1" id="augus-1755517583"><!-- Sync AdSlot 4 for Ad unit 'Skinner' ### Size: [[1,1],'fluid'] -->
+<div id='div-gpt-ad-4773716-4' style="width:100%">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-4'); });
+  </script>
+</div>
+<!-- End AdSlot 4 -->
+</div><div class="augus-after-body-2" id="augus-877338582"><!-- Sync AdSlot 5 for Ad unit 'Interstitial' ### Size: [[1,1],'fluid'] -->
+<div id='div-gpt-ad-4773716-5' style="width:100%">
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-4773716-5'); });   </script>
+</div>
+<!-- End AdSlot 5 -->
+</div><div class="augus-after-body-3" id="augus-945300552">
+<!-- Google Tag Manager (noscript) --> 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K5XT3G" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<!-- End Google Tag Manager (noscript) --></div><div class="augus-after-body-4" id="augus-140588140"><script>
+	googletag.cmd.push(function() { googletag.pubads().display([adSlotWebInterstitial]); });
+</script></div><script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+
+<form id='demo-form' action="/?submit=2" method="POST">
+    <button id="recaptcha" class="g-recaptcha" data-sitekey="6LeLB5kcAAAAAOdwAGP2bb_S0knbwEy-QS38EZRC" data-callback='onSubmit' style="display: none;">Submit</button>
+</form>
+
+<style>
+    .grecaptcha-badge {
+        visibility: hidden !important;
+    }
+</style>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+	function readCookie(name) {
+		let nameEQ = name + '=';
+		let ca = document.cookie.split(';');
+		for (let i = 0; i < ca.length; i++) {
+			let c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1, c.length);
+			}
+			if (c.indexOf(nameEQ) == 0) {
+				return c.substring(nameEQ.length, c.length);
+			}
+		}
+		return null;
+	}
+
+	if (!readCookie('recaptcha_score')) {
+		let burl = '';
+		let bodyready = true;
+		jQuery(window).on('load', function () {
+			grecaptcha.execute();
+		});
+
+		// jQuery('a').click(function (e) {
+		// 	grecaptcha.reset();
+		// 	bodyready = false;
+		// 	e.preventDefault();
+		// 	burl = jQuery(this).attr('href');
+		// 	jQuery('#recaptcha').click();
+		// });
+
+		function onSubmit(token) {
+
+			if (readCookie('recaptcha_score') && readCookie('recaptcha_score') != '') {
+				return false;
+			}
+
+			jQuery.post('https://www.augustman.com/in/wp-content/themes/augustman-2021/inc/getscore.php', {
+				token: token
+			}).done(function (data) {
+				if (data < 0.3) {
+					console.log('If part');
+					window.location.href = 'https://www.augustman.com/in/challenge-page/?r='+window.location.href;
+				} else if (burl != '') {
+					window.location.href = burl;
+				}
+			});
+		}
+	}
+</script> 
+<script>
+    // Lazy Loading
+    jQuery(window).on('load', lazyLoad());
+
+    function lazyLoad() {
+        console.log('Jay: Lazy load triggered:')
+        const images = document.querySelectorAll("[data-src]");
+        function preloadImage(img) {
+            const src = img.getAttribute("data-src");
+            if (!src) {
+                return;
+            }
+            img.src = src;
+        }
+        function preloadImageSet(img) {
+            const srcset = img.getAttribute("data-srcset");
+            if (!srcset) {
+                return;
+            }
+            img.srcset = srcset;
+        }
+        const imgOptions = {
+            threshold: 0,
+            rootMargin: "0px 0px 300px 0px"
+        };
+        const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    preloadImage(entry.target);
+                    preloadImageSet(entry.target);
+                    imgObserver.unobserve(entry.target);
+                }
+            })
+        }, imgOptions);
+        images.forEach(image => {
+            imgObserver.observe(image);
+        })
+    };
+
+    jQuery(window).on('load', function () {
+         function getBrowser() {
+            if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+                return 'Opera';
+            } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+                return 'Chrome';
+            } else if (navigator.userAgent.indexOf("Safari") != -1) {
+                return 'Safari';
+            } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+                return 'Firefox';
+            } else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) {
+                return 'IE';
+            } else {
+                return 'unknown';
+            }
+        };
+        var browserName = getBrowser();
+
+        var elem = document.querySelector('.safariSliderBox');
+
+        if (elem != null) {
+            if (browserName != 'Safari') { 
+                if (elem.classList.contains('safariSliderImage')) {
+                    elem.classList.remove('safariSliderImage');
+                }
+            } else {
+                console.log('Yes, Safari');
+            }
+        }
+    });
+
+    jQuery( document ).ready(function() { 
+        jQuery(document).on("click", 'a[href^="#"]', function (e) {
+        e.preventDefault(), jQuery("html, body").animate({
+            scrollTop: jQuery(jQuery.attr(this, "href")).offset().top - 150
+        }, 750)
+    });
+
+    jQuery('.inline-min-shop-slider').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            arrows: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1, 
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+
+});
+</script>
+
+
+<script type="text/javascript">
+
+    function setOutbrainBottomWidget(){	
+	var isMobile = window.screen.width < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+        console.log('isMobile? : ' + isMobile );
+	if(isMobile) {
+		if(document.getElementById('outbrain-holder-mobile') !== null){
+        		document.getElementById('outbrain-holder-mobile').innerHTML = '<div class="OUTBRAIN" data-widget-id="GS_1"></div>';
+}
+        } else {
+		if(document.getElementById('outbrain-holder-desktop') !== null){
+                	document.getElementById('outbrain-holder-desktop').innerHTML = '<div class="OUTBRAIN" data-widget-id="GS_1"></div>';
+		}
+        }
+    }
+if( typeof flagOutbrain !== 'undefined' && flagOutbrain == 1 ){
+	jsScripts.push('https://widgets.outbrain.com/outbrain.js');
+}
+</script>
+
+
+<script type="text/javascript">
+        /** Load js on first scroll **/
+        if(typeof jsScripts !== 'undefined' ){
+
+                var firstScrolled = 0;
+                if ( typeof varflagInstaPresent !== 'undefined' && varflagInstaPresent==1 ) {
+                        jsScripts.push("//www.instagram.com/embed.js");
+                }
+
+                if( jsScripts.length > 0  ){
+                        document.addEventListener("scroll", function () {
+                                if ( !firstScrolled ) {
+                                        firstScrolled = 1;
+                                        jsScripts.forEach(blLoadJS);
+                                }
+                        });
+                }
+        }
+	function blLoadJS(jsName) {
+        	if(typeof jsName !== 'undefined' ){
+                	let j = document.createElement("script");
+               		j.async = true;
+                	j.src = jsName;
+                	document.body.appendChild(j);
+                	console.log('Loading ' + jsName );
+        	}
+	}
+    
+
+</script>
+
+</body>
+
+</html>
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Database Caching 176/261 queries in 0.118 seconds using memcached
+
+Served from: www.augustman.com @ 2024-07-07 15:21:04 by W3 Total Cache
+-->
